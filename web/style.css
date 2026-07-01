@@ -1,0 +1,210 @@
+/* style.css */
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #131314; 
+}
+
+.gemini-gradient {
+    background: linear-gradient(74deg, #4285f4 0, #9b72cb 9%, #d96570 20%, #d96570 24%, #9b72cb 35%, #4285f4 44%, #9b72cb 50%, #d96570 56%, #131314 75%, #131314 100%);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 15s ease infinite;
+    white-space: pre-wrap;
+    line-height: 1.5;      
+    padding-bottom: 15px; 
+    display: inline-block;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+
+.suggestion-card {
+    background-color: #1e1f20;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+.suggestion-card:hover {
+    border-color: #f59e0b; 
+    background-color: #2a2b2d;
+}
+
+.blinking-cursor {
+    display: inline-block;
+    color: #a8c7fa; 
+    margin-left: 2px;
+    font-weight: bold;
+    animation: blink 1s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+.bot-avatar-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover; 
+    flex-shrink: 0;
+    border: 2px solid #333; 
+}
+
+/* 🟢 STYLE CHO BẢNG MARKDOWN */
+.message-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 0.9em;
+    background-color: #1e1f20;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.message-content th, .message-content td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+}
+.message-content th {
+    background-color: #303132;
+    color: #f59e0b; 
+    font-weight: 600;
+}
+
+/* Khung hiển thị ảnh xem trước */
+#image-preview-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 8px;
+    animation: fadeInPreview 0.2s ease-out;
+}
+#image-preview {
+    max-height: 100px;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+#remove-image-btn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #ef4444;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* 🔵 STYLE CHO NÚT GỬI ICON */
+#send-btn:not(:disabled) {
+    color: #f59e0b; /* amber-500 */
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.4));
+}
+
+#user-input::-webkit-scrollbar {
+    width: 0;
+}
+
+#user-input {
+    max-height: 200px;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    transition: height 0.05s ease-out;
+}
+
+#user-input:focus {
+    overflow-y: auto;
+}
+
+@keyframes fadeInPreview {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ?? STYLE CHO MARKDOWN LIST */
+.message-content ul {
+    list-style-type: disc !important;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.message-content li {
+    margin-bottom: 0.25rem;
+}
+
+/* ?? SIDEBAR & LAYOUT 2 C?T */
+#sidebar {
+    background-color: #000000;
+    z-index: 50;
+}
+.session-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #ececec;
+    font-size: 0.875rem;
+    position: relative;
+    group: hover;
+}
+.session-item:hover {
+    background-color: #202123;
+}
+.session-item.active {
+    background-color: #343541;
+}
+.delete-session {
+    opacity: 0;
+    transition: opacity 0.2s;
+    padding: 4px;
+    border-radius: 4px;
+}
+.session-item:hover .delete-session {
+    opacity: 1;
+    color: #8e8ea0;
+}
+.delete-session:hover {
+    color: #ff4d4d !important;
+    background-color: rgba(255, 77, 77, 0.1);
+}
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #424242;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    #sidebar {
+        position: absolute;
+        left: -280px;
+        top: 0;
+        height: 100%;
+        box-shadow: 20px 0 50px rgba(0,0,0,0.5);
+    }
+    #sidebar.open {
+        left: 0;
+        display: flex !important;
+    }
+}
+
+/* 🟢 HOẠT ẢNH HIỂN THỊ CHO MODAL XÁC NHẬN */
+.animate-fade-in {
+    animation: fadeInModal 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes fadeInModal {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}

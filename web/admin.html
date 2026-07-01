@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Quản trị Luật Giao Thông AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin-style.css">
+<body class="text-gray-200 min-h-screen flex flex-col bg-[#131314]">
+
+    <header class="p-4 flex justify-between items-center bg-[#131314]/80 backdrop-blur-md sticky top-0 z-10 border-b border-gray-800">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center shadow-lg shadow-amber-500/20 overflow-hidden bg-white border border-gray-800/50">
+                <img src="./image/avt_bot.png" alt="Logo" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h1 class="text-xl font-bold tracking-tight text-white uppercase leading-tight">Admin <span class="gemini-gradient text-transparent bg-clip-text">Panel</span></h1>
+            </div>
+        </div>
+        
+        <div class="flex items-center gap-4">
+            <div
+                class="flex items-center gap-3 bg-[#1e1f20] px-4 py-2 rounded-full border border-gray-800 shadow-lg">
+                <div id="user-avatar-btn"
+                    class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-sm font-bold text-white uppercase">
+                </div>
+                <div class="flex flex-col text-left">
+                    <span id="display-username" class="text-sm font-semibold text-white leading-none">...</span>
+                    <span id="display-role" class="text-[10px] text-red-500 leading-none mt-1 font-semibold">...</span>
+                </div>
+                <a href="index.html"
+                    class="hover:bg-gray-800 p-1.5 rounded-full text-amber-500 transition ml-2 flex items-center justify-center"
+                    title="Về trang Chat">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                </a>
+                <button onclick="logout()"
+                    class="hover:bg-red-500/10 p-1.5 rounded-full text-red-400 hover:text-red-500 transition ml-1 flex items-center justify-center"
+                    title="Đăng xuất">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 p-6 flex justify-center items-start pt-10">
+        <div class="w-full max-w-5xl bg-[#1e1f20] rounded-3xl flex flex-col overflow-hidden shadow-2xl border border-gray-800 min-h-[75vh]">
+            
+            <div class="flex gap-8 border-b border-gray-700 bg-[#131314] px-8 pt-6">
+                <button id="tab-view-btn" onclick="switchAdminTab('view')" class="text-amber-500 border-b-2 border-amber-500 pb-3 font-semibold text-lg transition-colors">
+                    Xem các văn bản luật
+                </button>
+                <button id="tab-add-btn" onclick="switchAdminTab('add')" class="text-gray-400 hover:text-gray-200 border-b-2 border-transparent pb-3 font-semibold text-lg transition-colors">
+                    Thêm luật
+                </button>
+            </div>
+
+            <div id="tab-view-content" class="p-8 flex-1 overflow-y-auto bg-[#131314]"></div>
+
+            <div id="tab-add-content" class="p-8 flex-1 overflow-y-auto hidden bg-[#131314] flex flex-col items-center justify-center">
+                <div class="max-w-xl w-full space-y-6">
+                    <div class="text-center mb-4">
+                        <h2 class="text-3xl font-bold text-white mb-2">Import Tệp Tin</h2>
+                        <p class="text-gray-400">Chọn tệp hình ảnh, PDF hoặc văn bản để gửi về hệ thống Neo4j.</p>
+                    </div>
+
+                    <div id="dropzone" class="border-2 border-dashed border-[#444] rounded-2xl p-10 flex flex-col items-center justify-center hover:border-amber-500 transition-colors cursor-pointer group bg-[#1e1f20]">
+                        <input type="file" id="file-input" class="hidden" webkitdirectory directory multiple>
+                        <div class="w-16 h-16 bg-[#303132] rounded-full flex items-center justify-center text-gray-400 group-hover:text-amber-500 transition-colors mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" /></svg>
+                        </div>
+                        <p id="file-name" class="text-gray-300 font-medium text-center">Bấm để chọn thư mục hoặc kéo thả thư mục vào đây</p>
+                        <p class="text-gray-500 text-xs mt-2">Sẽ tự động quét toàn bộ file: JPG, PNG, PDF, TXT, MD</p>
+                    </div>
+
+                    <div id="file-list-container" class="hidden">
+                        <p class="text-xs text-gray-500 mb-3 uppercase tracking-widest font-bold">Danh sách tệp tin (0)</p>
+                        <div id="file-list" class="space-y-2 max-h-40 overflow-y-auto pr-2 custom-scrollbar"></div>
+                    </div>
+
+                    <button id="import-btn" class="w-full py-4 bg-amber-600 hover:bg-amber-500 disabled:bg-gray-700 disabled:text-gray-500 text-white font-bold rounded-2xl transition-all shadow-lg shadow-amber-900/20" disabled>
+                        Bắt đầu Import
+                    </button>
+
+                    <div id="status-container" class="hidden">
+                        <div class="flex items-center gap-3 p-4 rounded-xl border border-gray-700 bg-[#303132]" id="status-box">
+                            <div id="status-icon" class="animate-spin h-5 w-5 border-2 border-amber-500 border-t-transparent rounded-full"></div>
+                            <p id="status-text" class="text-sm font-medium text-white"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="delete-confirm-modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 px-4">
+        <div class="bg-[#1e1f20] border border-gray-800 rounded-3xl p-6 w-full max-w-md shadow-2xl animate-fade-in relative">
+            <div class="flex flex-col items-center text-center space-y-4">
+                <div class="w-12 h-12 bg-red-950/30 border border-red-500/30 rounded-full flex items-center justify-center text-red-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white">Xác nhận xóa văn bản</h3>
+                <p class="text-sm text-gray-400">Bạn có chắc chắn muốn xóa văn bản luật dưới đây ra khỏi hệ thống Neo4j?</p>
+                <div class="w-full bg-[#131314] p-3.5 rounded-xl border border-gray-800 text-left">
+                    <p id="delete-doc-name" class="text-sm font-semibold text-amber-500 leading-relaxed break-words"></p>
+                </div>
+                <p class="text-xs text-red-400 font-medium">⚠️ Cảnh báo: Tất cả các đoạn văn bản (chunks) liên quan cũng sẽ bị xóa vĩnh viễn.</p>
+            </div>
+            <div class="flex gap-3 mt-6">
+                <button onclick="closeDeleteModal()" class="flex-1 py-3 bg-[#303132] hover:bg-gray-700 text-white font-semibold rounded-xl border border-gray-600 transition">
+                    Hủy bỏ
+                </button>
+                <button id="btn-confirm-delete" class="flex-1 py-3 bg-red-600 hover:bg-red-500 text-white font-semibold rounded-xl transition shadow-lg shadow-red-950/30">
+                    Xác nhận xóa
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>

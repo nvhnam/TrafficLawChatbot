@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác thực - Luật Giao Thông AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-gray-200 h-screen flex items-center justify-center bg-[#131314] overflow-hidden relative">
+
+    <!-- Background glowing ambient blobs -->
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-[120px] pointer-events-none animate-pulse" style="animation-duration: 8s;"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-[120px] pointer-events-none animate-pulse" style="animation-duration: 12s;"></div>
+
+    <div class="w-full max-w-md bg-[#1e1f20]/90 backdrop-blur-md border border-gray-800 rounded-3xl p-8 shadow-2xl relative z-10 transition-all">
+
+        <!-- Logo & Header -->
+        <div class="flex flex-col items-center justify-center mb-8">
+            <div class="w-14 h-14 rounded-2xl flex items-center justify-center shadow-xl shadow-amber-500/10 overflow-hidden bg-white mb-4 border border-gray-800">
+                <img src="./image/avt_bot.png" alt="Logo" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-2xl font-extrabold tracking-tight text-white uppercase leading-tight">
+                Luật Giao Thông <span class="gemini-gradient text-transparent bg-clip-text">AI</span>
+            </h1>
+            <p class="text-xs text-gray-500 uppercase tracking-widest mt-1">Trợ lý tra cứu mức phạt 24/7</p>
+        </div>
+
+        <div id="login-section">
+            <!-- Pill Tab Switcher -->
+            <div class="flex bg-[#131314] p-1 rounded-xl border border-gray-800/80 mb-6 relative">
+                <button id="tab-user" onclick="switchLoginTab('user')"
+                    class="flex-1 py-2.5 rounded-lg text-amber-500 bg-[#1e1f20] border border-gray-800 font-semibold transition text-sm flex items-center justify-center gap-2 shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    Người Dùng
+                </button>
+                <button id="tab-admin" onclick="switchLoginTab('admin')"
+                    class="flex-1 py-2.5 rounded-lg text-gray-400 hover:text-gray-200 font-semibold transition text-sm flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    Quản Trị
+                </button>
+            </div>
+
+            <!-- Form -->
+            <form id="login-form" onsubmit="event.preventDefault(); handleLogin();" class="space-y-4">
+                <div>
+                    <input type="text" id="login-username" placeholder="Tên đăng nhập" autofocus required
+                        class="w-full bg-[#131314] border border-gray-800 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition">
+                </div>
+                <div>
+                    <input type="password" id="login-password" placeholder="Mật khẩu" required
+                        class="w-full bg-[#131314] border border-gray-800 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition">
+                </div>
+                <p id="login-error" class="text-red-500 text-sm hidden bg-red-950/20 border border-red-800/40 p-3 rounded-xl text-center"></p>
+                <button type="submit" id="btn-login"
+                    class="w-full py-3.5 bg-amber-600 hover:bg-amber-500 hover:-translate-y-[1px] active:translate-y-0 text-white font-bold rounded-xl transition-all duration-200 shadow-lg shadow-amber-950/40 hover:shadow-amber-500/20 flex items-center justify-center gap-2">
+                    <span>Đăng nhập hệ thống</span>
+                </button>
+            </form>
+            <p class="text-center text-sm text-gray-400 mt-6" id="register-hint">
+                Chưa có tài khoản? <span onclick="toggleForm('register')"
+                    class="text-amber-500 cursor-pointer hover:underline font-medium">Đăng ký ngay</span>
+            </p>
+        </div>
+
+        <div id="register-section" class="hidden">
+            <h2 class="text-lg font-bold mb-6 text-center text-white flex items-center justify-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                </svg>
+                Tạo tài khoản mới
+            </h2>
+            <form id="register-form" onsubmit="event.preventDefault(); handleRegister();" class="space-y-4">
+                <div>
+                    <input type="text" id="reg-username" placeholder="Tên đăng nhập" required
+                        class="w-full bg-[#131314] border border-gray-800 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition">
+                </div>
+                <div>
+                    <input type="password" id="reg-password" placeholder="Mật khẩu" required
+                        class="w-full bg-[#131314] border border-gray-800 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition">
+                </div>
+                <p id="reg-error" class="text-red-500 text-sm hidden bg-red-950/20 border border-red-800/40 p-3 rounded-xl text-center"></p>
+                <p id="reg-success" class="text-green-500 text-sm hidden bg-green-950/20 border border-green-800/40 p-3 rounded-xl text-center"></p>
+                <button type="submit"
+                    class="w-full py-3.5 bg-[#303132] hover:bg-gray-700 hover:-translate-y-[1px] active:translate-y-0 text-white font-bold rounded-xl transition-all duration-200 border border-gray-600 shadow-md">
+                    Đăng ký tài khoản
+                </button>
+            </form>
+            <p class="text-center text-sm text-gray-400 mt-6">
+                Đã có tài khoản? <span onclick="toggleForm('login')"
+                    class="text-amber-500 cursor-pointer hover:underline font-medium">Đăng nhập</span>
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        const currentUserStr = localStorage.getItem('currentUser');
+        if (currentUserStr) {
+            const currentUser = JSON.parse(currentUserStr);
+            if (currentUser.role === 'admin') {
+                window.location.href = 'admin.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+
+        const API_URL = 'http://localhost:1904';
+        let currentRoleTab = 'user';
+
+        function switchLoginTab(role) {
+            currentRoleTab = role;
+            const tabUser = document.getElementById('tab-user');
+            const tabAdmin = document.getElementById('tab-admin');
+            const btnLogin = document.getElementById('btn-login');
+            const registerHint = document.getElementById('register-hint');
+            const loginUsername = document.getElementById('login-username');
+            const loginPassword = document.getElementById('login-password');
+
+            if (role === 'admin') {
+                // Set Admin Tab Active
+                tabAdmin.className = "flex-1 py-2.5 rounded-lg text-red-500 bg-[#1e1f20] border border-gray-800 font-semibold transition text-sm flex items-center justify-center gap-2 shadow-sm";
+                // Set User Tab Inactive
+                tabUser.className = "flex-1 py-2.5 rounded-lg text-gray-400 hover:text-gray-200 font-semibold transition text-sm flex items-center justify-center gap-2";
+
+                // Update Login Button
+                btnLogin.className = "w-full py-3.5 bg-red-600 hover:bg-red-500 hover:-translate-y-[1px] active:translate-y-0 text-white font-bold rounded-xl transition-all duration-200 shadow-lg shadow-red-950/40 hover:shadow-red-500/20 flex items-center justify-center gap-2";
+                btnLogin.innerText = "Đăng nhập Quản Trị";
+                registerHint.style.visibility = 'hidden';
+
+                // Change input focus rings to Red
+                if (loginUsername) {
+                    loginUsername.className = "w-full bg-[#131314] border border-gray-800 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition";
+                }
+                if (loginPassword) {
+                    loginPassword.className = "w-full bg-[#131314] border border-gray-800 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition";
+                }
+            } else {
+                // Set User Tab Active
+                tabUser.className = "flex-1 py-2.5 rounded-lg text-amber-500 bg-[#1e1f20] border border-gray-800 font-semibold transition text-sm flex items-center justify-center gap-2 shadow-sm";
+                // Set Admin Tab Inactive
+                tabAdmin.className = "flex-1 py-2.5 rounded-lg text-gray-400 hover:text-gray-200 font-semibold transition text-sm flex items-center justify-center gap-2";
+
+                // Update Login Button
+                btnLogin.className = "w-full py-3.5 bg-amber-600 hover:bg-amber-500 hover:-translate-y-[1px] active:translate-y-0 text-white font-bold rounded-xl transition-all duration-200 shadow-lg shadow-amber-950/40 hover:shadow-amber-500/20 flex items-center justify-center gap-2";
+                btnLogin.innerText = "Đăng nhập hệ thống";
+                registerHint.style.visibility = 'visible';
+
+                // Change input focus rings to Amber
+                if (loginUsername) {
+                    loginUsername.className = "w-full bg-[#131314] border border-gray-800 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition";
+                }
+                if (loginPassword) {
+                    loginPassword.className = "w-full bg-[#131314] border border-gray-800 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition";
+                }
+            }
+            document.getElementById('login-error').classList.add('hidden');
+        }
+
+        function toggleForm(type) {
+            if (type === 'register') {
+                document.getElementById('login-section').classList.add('hidden');
+                document.getElementById('register-section').classList.remove('hidden');
+            } else {
+                document.getElementById('register-section').classList.add('hidden');
+                document.getElementById('login-section').classList.remove('hidden');
+            }
+        }
+
+        async function handleLogin() {
+            const u = document.getElementById('login-username').value;
+            const p = document.getElementById('login-password').value;
+            const err = document.getElementById('login-error');
+
+            try {
+                const res = await fetch(`${API_URL}/login`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'ngrok-skip-browser-warning': 'true'
+                    },
+                    body: JSON.stringify({ username: u, password: p })
+                });
+                const data = await res.json();
+
+                if (data.code === "0") {
+                    const user = data.data;
+                    if (currentRoleTab === 'admin' && user.role !== 'admin') {
+                        err.textContent = "Tài khoản của bạn không có quyền Quản trị viên!";
+                        err.classList.remove('hidden');
+                        return;
+                    }
+                    localStorage.setItem('currentUser', JSON.stringify(user));
+                    if (user.role === 'admin') {
+                        window.location.href = 'admin.html';
+                    } else {
+                        window.location.href = 'index.html';
+                    }
+                } else {
+                    err.textContent = data.message;
+                    err.classList.remove('hidden');
+                }
+            } catch (error) {
+                err.textContent = "Lỗi kết nối đến máy chủ!";
+                err.classList.remove('hidden');
+            }
+        }
+
+        async function handleRegister() {
+            const u = document.getElementById('reg-username').value;
+            const p = document.getElementById('reg-password').value;
+            const err = document.getElementById('reg-error');
+            const suc = document.getElementById('reg-success');
+
+            err.classList.add('hidden');
+            suc.classList.add('hidden');
+
+            try {
+                const res = await fetch(`${API_URL}/register`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'ngrok-skip-browser-warning': 'true'
+                    },
+                    body: JSON.stringify({ username: u, password: p })
+                });
+                const data = await res.json();
+
+                if (data.code === "0") {
+                    suc.textContent = "Đăng ký thành công! Hãy đăng nhập.";
+                    suc.classList.remove('hidden');
+                    setTimeout(() => toggleForm('login'), 1500);
+                } else {
+                    err.textContent = data.message;
+                    err.classList.remove('hidden');
+                }
+            } catch (error) {
+                err.textContent = "Lỗi kết nối đến máy chủ!";
+                err.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+
+</html>

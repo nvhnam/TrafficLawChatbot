@@ -1,0 +1,114 @@
+/* admin-style.css */
+body {
+    background-color: #131314;
+    font-family: 'Inter', sans-serif;
+}
+
+#dropzone {
+    transition: all 0.3s ease;
+}
+
+#dropzone.dragover {
+    border-color: #f59e0b;
+    background-color: rgba(245, 158, 11, 0.05);
+    transform: scale(1.01);
+}
+
+#preview-area {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.file-item {
+    background-color: #303132;
+    border: 1px solid #444;
+    padding: 12px 16px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.file-item:hover {
+    border-color: #555;
+    background-color: #38393b;
+}
+
+.file-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.file-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #fff;
+    max-width: 320px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-meta {
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+.remove-file {
+    color: #9ca3af;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.remove-file:hover {
+    color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+#file-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#file-list::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+}
+
+#status-box.success {
+    background-color: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    color: #10b981;
+}
+
+#status-box.error {
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+#status-box.processing {
+    background-color: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    color: #3b82f6;
+}
+
+#text-viewer::-webkit-scrollbar {
+    width: 4px;
+}
+
+#text-viewer::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    filter: grayscale(1);
+}

@@ -1,0 +1,25 @@
+Hệ thống hỏi đáp Luật Giao thông theo ngữ nghĩa
++ Mục tiêu: Thiết kế hệ thống truy vấn các hành vi vi phạm (mô tả bằng ngôn ngữ tự nhiên phức
+tạp) và trả lời chính xác mức phạt, hình thức bổ sung và căn cứ điều luật. Hệ thống cần hiểu sự
+tương đồng ngữ nghĩa giữa các mô tả vi phạm.
++ Thu thập tri thức:
+• Nghị định 100/2019/NĐ-CP và các văn bản sửa đổi (Nghị định 123/2021/NĐ-CP, Nghị
+định 168/2024/NĐ-CP).
+• Tập dữ liệu 300 lỗi giao thông và mức phạt.
++ Xây dựng mô hình biểu diễn tri thức: Đề xuất mô hình biểu diễn cho tri thức của hệ thống.
+Tri thức của hệ thống sẽ bao gồm ít nhất các nội dung sau:
+• Hành vi → Mức phạt → Điều luật → Hình thức bổ sung.
+• Mô hình đồ thị tri thức để so khớp truy vấn tương đồng.
++ Bài toán và các Thuật giải tương ứng:
+• Đề xuất các vấn đề cần vấn đề trong hệ thống và phương pháp giải tương ứng. Có thể sử
+dụng suy luận ngữ nghĩa (semantic reasoning).
+• LLM được sử dụng để phân tích Intent và trích xuất thực thể (Entity Extraction) từ câu
+truy vấn tự nhiên.
+• Suy luận Ngữ nghĩa: Sử dụng kỹ thuật Word/Sentence Embedding và Vector Search trên
+Đồ thị Tri thức để so khớp truy vấn của người dùng với các hành vi đã được mô hình hóa,
+ngay cả khi câu hỏi không dùng từ khóa chính xác.
+• Nếu không có căn cứ → trả lời “Không biết / Không có dữ liệu”.
+ Yêu cầu sản phẩm:
+• Giao diện hỏi bằng tiếng Việt tự nhiên.
+• Hệ thống trả lời kèm trích dẫn cụ thể.
+• Báo cáo so sánh hiệu quả giữa các LLMs về luật và Hệ thống xây dựng.

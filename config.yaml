@@ -1,0 +1,12 @@
+database:
+  uri : "bolt://localhost:7687"
+  name: "neo4j"
+
+models :
+  pro: "gemini-2.5-pro"
+  flash: "gemini-2.5-flash"
+  preview: "gemini-3-flash-preview"
+  embedding: "AITeamVN/Vietnamese_Embedding"
+
+generation_config:
+  temperature: 0

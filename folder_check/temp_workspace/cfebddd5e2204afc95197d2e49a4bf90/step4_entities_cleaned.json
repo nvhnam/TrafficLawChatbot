@@ -1,0 +1,857 @@
+[
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "512b81e5cf6a4a2493028419131345b4_e1",
+                "label": "SUBJECT",
+                "name": "Cơ quan nhà nước",
+                "value": "Cơ quan nhà nước"
+            },
+            {
+                "id": "512b81e5cf6a4a2493028419131345b4_e2",
+                "label": "LEGAL_CONCEPT",
+                "name": "Chủ sở hữu toàn dân về đất đai",
+                "value": "chủ sở hữu toàn dân về đất đai"
+            }
+        ],
+        "Level_2_Rules_Actions": [
+            {
+                "id": "512b81e5cf6a4a2493028419131345b4_e3",
+                "label": "RIGHT_OBLIGATION",
+                "name": "Thực hiện quyền hạn và trách nhiệm đại diện chủ sở hữu toàn dân về đất đai",
+                "value": "thực hiện quyền hạn và trách nhiệm đại diện chủ sở hữu toàn dân về đất đai"
+            },
+            {
+                "id": "512b81e5cf6a4a2493028419131345b4_e4",
+                "label": "RIGHT_OBLIGATION",
+                "name": "Thực hiện nhiệm vụ thống nhất quản lý nhà nước về đất đai",
+                "value": "thực hiện nhiệm vụ thống nhất quản lý nhà nước về đất đai"
+            }
+        ],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "512b81e5cf6a4a2493028419131345b4_e1",
+                "type": "HAS_RIGHT_OBLIGATION",
+                "target": "512b81e5cf6a4a2493028419131345b4_e3"
+            },
+            {
+                "source": "512b81e5cf6a4a2493028419131345b4_e1",
+                "type": "HAS_RIGHT_OBLIGATION",
+                "target": "512b81e5cf6a4a2493028419131345b4_e4"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "2",
+            "khoan": "1",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "512b81e5cf6a4a2493028419131345b4"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 2 - Khoản 1]\nĐiều 2. Đối tượng áp dụng\n1. Cơ quan nhà nước thực hiện quyền hạn và trách nhiệm đại diện chủ sở hữu toàn dân về đất đai, thực hiện nhiệm vụ thống nhất quản lý nhà nước về đất đai.",
+        "chunk_id": 1
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "1b546c13c36049f4937d5b473342080e_e1",
+                "label": "SUBJECT",
+                "name": "Quốc hội",
+                "value": "Quốc hội"
+            },
+            {
+                "id": "1b546c13c36049f4937d5b473342080e_e2",
+                "label": "DOCUMENT_RECORD",
+                "name": "Luật số 31/2024/QH15 LUẬT ĐẤT ĐAI",
+                "value": "Luật số 31/2024/QH15 LUẬT ĐẤT ĐAI"
+            },
+            {
+                "id": "1b546c13c36049f4937d5b473342080e_e3",
+                "label": "DOCUMENT_RECORD",
+                "name": "Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+                "value": "Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam"
+            },
+            {
+                "id": "1b546c13c36049f4937d5b473342080e_e4",
+                "label": "STANDARD_CONDITION",
+                "name": "Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+                "value": "Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam"
+            },
+            {
+                "id": "doc_root_0",
+                "label": "DOCUMENT_RECORD",
+                "name": "Luật Đất đai số 31/2024/QH15",
+                "value": "Luật Đất đai số 31/2024/QH15"
+            },
+            {
+                "id": "doc_base_0",
+                "label": "DOCUMENT_RECORD",
+                "name": "Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+                "value": "Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam"
+            },
+            {
+                "id": "doc_base_1",
+                "label": "DOCUMENT_RECORD",
+                "name": "Quốc hội ban hành Luật Đất đai.",
+                "value": "Quốc hội ban hành Luật Đất đai."
+            }
+        ],
+        "Level_2_Rules_Actions": [
+            {
+                "id": "1b546c13c36049f4937d5b473342080e_e5",
+                "label": "PROCEDURE_ACTION",
+                "name": "Ban hành Luật Đất đai",
+                "value": "Quốc hội ban hành Luật Đất đai."
+            }
+        ],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "1b546c13c36049f4937d5b473342080e_e1",
+                "type": "EXECUTES_ACTION",
+                "target": "1b546c13c36049f4937d5b473342080e_e5"
+            },
+            {
+                "source": "1b546c13c36049f4937d5b473342080e_e5",
+                "type": "MEETS_CONDITION",
+                "target": "1b546c13c36049f4937d5b473342080e_e4"
+            },
+            {
+                "source": "1b546c13c36049f4937d5b473342080e_e1",
+                "type": "HAS_AUTHORITY",
+                "target": "1b546c13c36049f4937d5b473342080e_e2"
+            },
+            {
+                "source": "doc_root_0",
+                "type": "BASES_ON",
+                "target": "doc_base_0"
+            },
+            {
+                "source": "doc_root_0",
+                "type": "BASES_ON",
+                "target": "doc_base_1"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "Phần mở đầu",
+            "khoan": null,
+            "diem": null,
+            "type": "PREAMBLE",
+            "chunk_uuid": "1b546c13c36049f4937d5b473342080e"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều Phần mở đầu]\n**QUỐC HỘI**\n\n**CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM**\n**Độc lập - Tự do - Hạnh phúc**\n\nLuật số: 31/2024/QH15\n\n**LUẬT**\n**ĐẤT ĐAI**\n\n*Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam;*\n*Quốc hội ban hành Luật Đất đai.*\n\n## Chương I. QUY ĐỊNH CHUNG",
+        "chunk_id": 2
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "8cae40d8d05a4e63ac221d9879945807_e1",
+                "label": "DOCUMENT_RECORD",
+                "name": "Điều 1. Phạm vi điều chỉnh\nLuật Đất đai số 31/2024/QH15 quy định về chế độ sở hữu đất đai, quyền hạn và trách nhiệm của Nhà nước đại diện chủ sở hữu toàn dân về đất đai và thống nhất quản lý về đất đai, chế độ quản lý và sử dụng đất đai, quyền và nghĩa vụ của công dân, người sử dụng đất đối với đất đai thuộc lãnh thổ của nước Cộng hòa xã hội chủ nghĩa Việt Nam.",
+                "value": "Điều 1. Phạm vi điều chỉnh\nLuật Đất đai số 31/2024/QH15 quy định về chế độ sở hữu đất đai, quyền hạn và trách nhiệm của Nhà nước đại diện chủ sở hữu toàn dân về đất đai và thống nhất quản lý về đất đai, chế độ quản lý và sử dụng đất đai, quyền và nghĩa vụ của công dân, người sử dụng đất đối với đất đai thuộc lãnh thổ của nước Cộng hòa xã hội chủ nghĩa Việt Nam."
+            },
+            {
+                "id": "8cae40d8d05a4e63ac221d9879945807_e2",
+                "label": "LEGAL_CONCEPT",
+                "name": "Chế độ sở hữu đất đai",
+                "value": "chế độ sở hữu đất đai"
+            },
+            {
+                "id": "8cae40d8d05a4e63ac221d9879945807_e3",
+                "label": "SUBJECT",
+                "name": "Nhà nước",
+                "value": "Nhà nước đại diện chủ sở hữu toàn dân về đất đai"
+            },
+            {
+                "id": "8cae40d8d05a4e63ac221d9879945807_e4",
+                "label": "LEGAL_CONCEPT",
+                "name": "Chế độ quản lý và sử dụng đất đai",
+                "value": "chế độ quản lý và sử dụng đất đai"
+            },
+            {
+                "id": "8cae40d8d05a4e63ac221d9879945807_e5",
+                "label": "SUBJECT",
+                "name": "Công dân, người sử dụng đất",
+                "value": "công dân, người sử dụng đất"
+            },
+            {
+                "id": "8cae40d8d05a4e63ac221d9879945807_e6",
+                "label": "OBJECT_EQUIPMENT",
+                "name": "Đất đai thuộc lãnh thổ Việt Nam",
+                "value": "đất đai thuộc lãnh thổ của nước Cộng hòa xã hội chủ nghĩa Việt Nam"
+            }
+        ],
+        "Level_2_Rules_Actions": [
+            {
+                "id": "8cae40d8d05a4e63ac221d9879945807_e7",
+                "label": "RIGHT_OBLIGATION",
+                "name": "Quyền hạn và trách nhiệm của Nhà nước về đất đai",
+                "value": "quyền hạn và trách nhiệm của Nhà nước đại diện chủ sở hữu toàn dân về đất đai và thống nhất quản lý về đất đai"
+            },
+            {
+                "id": "8cae40d8d05a4e63ac221d9879945807_e8",
+                "label": "RIGHT_OBLIGATION",
+                "name": "Quyền và nghĩa vụ của công dân, người sử dụng đất đối với đất đai",
+                "value": "quyền và nghĩa vụ của công dân, người sử dụng đất đối với đất đai"
+            }
+        ],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "8cae40d8d05a4e63ac221d9879945807_e3",
+                "type": "HAS_RIGHT_OBLIGATION",
+                "target": "8cae40d8d05a4e63ac221d9879945807_e7"
+            },
+            {
+                "source": "8cae40d8d05a4e63ac221d9879945807_e5",
+                "type": "HAS_RIGHT_OBLIGATION",
+                "target": "8cae40d8d05a4e63ac221d9879945807_e8"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "1",
+            "khoan": null,
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "8cae40d8d05a4e63ac221d9879945807"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 1]\nĐiều 1. Phạm vi điều chỉnh\nLuật này quy định về chế độ sở hữu đất đai, quyền hạn và trách nhiệm của Nhà nước đại diện chủ sở hữu toàn dân về đất đai và thống nhất quản lý về đất đai, chế độ quản lý và sử dụng đất đai, quyền và nghĩa vụ của công dân, người sử dụng đất đối với đất đai thuộc lãnh thổ của nước Cộng hòa xã hội chủ nghĩa Việt Nam.",
+        "chunk_id": 3
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "d45c746be1984e2cb98e74dc95efd71d_e1",
+                "label": "SUBJECT",
+                "name": "Đối tượng khác liên quan đến quản lý, sử dụng đất đai",
+                "value": "Các đối tượng khác có liên quan đến việc quản lý, sử dụng đất đai."
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "2",
+            "khoan": "3",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "d45c746be1984e2cb98e74dc95efd71d"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 2 - Khoản 3]\nĐiều 2. Đối tượng áp dụng\n3. Các đối tượng khác có liên quan đến việc quản lý, sử dụng đất đai.",
+        "chunk_id": 4
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "222f629a0b8c4495af6f71571644028b_e1",
+                "label": "SUBJECT",
+                "name": "Người sử dụng đất",
+                "value": "Người sử dụng đất."
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "2",
+            "khoan": "2",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "222f629a0b8c4495af6f71571644028b"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 2 - Khoản 2]\nĐiều 2. Đối tượng áp dụng\n2. Người sử dụng đất.",
+        "chunk_id": 5
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "4bdd7a9104d14725b890ee8292fdc9d4_e1",
+                "label": "DOCUMENT_RECORD",
+                "name": "Điều 3. Giải thích từ ngữ của Luật Đất đai số 31/2024/QH15",
+                "value": "Điều 3. Giải thích từ ngữ của Luật Đất đai số 31/2024/QH15"
+            },
+            {
+                "id": "4bdd7a9104d14725b890ee8292fdc9d4_e2",
+                "label": "LEGAL_CONCEPT",
+                "name": "Bản đồ địa chính",
+                "value": "Bản đồ địa chính"
+            },
+            {
+                "id": "4bdd7a9104d14725b890ee8292fdc9d4_e3",
+                "label": "DEFINITION",
+                "name": "Định nghĩa Bản đồ địa chính",
+                "value": "Bản đồ địa chính là bản đồ thể hiện các thửa đất và các đối tượng địa lý có liên quan, lập theo đơn vị hành chính cấp xã hoặc theo đơn vị hành chính cấp huyện nơi không thành lập đơn vị hành chính cấp xã, được cơ quan nhà nước có thẩm quyền xác nhận."
+            },
+            {
+                "id": "4bdd7a9104d14725b890ee8292fdc9d4_e4",
+                "label": "SUBJECT",
+                "name": "Cơ quan nhà nước có thẩm quyền",
+                "value": "cơ quan nhà nước có thẩm quyền"
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "4bdd7a9104d14725b890ee8292fdc9d4_e2",
+                "type": "DEFINES",
+                "target": "4bdd7a9104d14725b890ee8292fdc9d4_e3"
+            },
+            {
+                "source": "4bdd7a9104d14725b890ee8292fdc9d4_e4",
+                "type": "HAS_AUTHORITY",
+                "target": "4bdd7a9104d14725b890ee8292fdc9d4_e2"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "3",
+            "khoan": "1",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "4bdd7a9104d14725b890ee8292fdc9d4"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 3 - Khoản 1]\nĐiều 3. Giải thích từ ngữ\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\n1. *Bản đồ địa chính* là bản đồ thể hiện các thửa đất và các đối tượng địa lý có liên quan, lập theo đơn vị hành chính cấp xã hoặc theo đơn vị hành chính cấp huyện nơi không thành lập đơn vị hành chính cấp xã, được cơ quan nhà nước có thẩm quyền xác nhận.",
+        "chunk_id": 6
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "dd93e00f080345a79c673d86c3eafc18_e1",
+                "label": "LEGAL_CONCEPT",
+                "name": "Bản đồ quy hoạch sử dụng đất",
+                "value": "Bản đồ quy hoạch sử dụng đất"
+            },
+            {
+                "id": "dd93e00f080345a79c673d86c3eafc18_e2",
+                "label": "DEFINITION",
+                "name": "Định nghĩa Bản đồ quy hoạch sử dụng đất",
+                "value": "Bản đồ quy hoạch sử dụng đất là bản đồ được lập tại thời điểm đầu kỳ quy hoạch, thể hiện nội dung phân bố các loại đất tại thời điểm cuối kỳ quy hoạch của quy hoạch đó."
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "dd93e00f080345a79c673d86c3eafc18_e1",
+                "type": "DEFINES",
+                "target": "dd93e00f080345a79c673d86c3eafc18_e2"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "3",
+            "khoan": "3",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "dd93e00f080345a79c673d86c3eafc18"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 3 - Khoản 3]\nĐiều 3. Giải thích từ ngữ\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\n3. *Bản đồ quy hoạch sử dụng đất* là bản đồ được lập tại thời điểm đầu kỳ quy hoạch, thể hiện nội dung phân bố các loại đất tại thời điểm cuối kỳ quy hoạch của quy hoạch đó.",
+        "chunk_id": 7
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "2f2276f2d38b495788b9f895bfd1b775_e1",
+                "label": "LEGAL_CONCEPT",
+                "name": "Bản đồ hiện trạng sử dụng đất",
+                "value": "Bản đồ hiện trạng sử dụng đất"
+            },
+            {
+                "id": "2f2276f2d38b495788b9f895bfd1b775_e2",
+                "label": "DEFINITION",
+                "name": "Định nghĩa Bản đồ hiện trạng sử dụng đất",
+                "value": "Bản đồ hiện trạng sử dụng đất là bản đồ thể hiện sự phân bố các loại đất tại một thời điểm xác định, được lập theo từng đơn vị hành chính các cấp, theo từng vùng kinh tế - xã hội."
+            },
+            {
+                "id": "2f2276f2d38b495788b9f895bfd1b775_e3",
+                "label": "DOCUMENT_RECORD",
+                "name": "Điều 3. Giải thích từ ngữ của Luật Đất đai số 31/2024/QH15",
+                "value": "Điều 3. Giải thích từ ngữ của Luật Đất đai số 31/2024/QH15"
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "2f2276f2d38b495788b9f895bfd1b775_e1",
+                "type": "DEFINES",
+                "target": "2f2276f2d38b495788b9f895bfd1b775_e2"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "3",
+            "khoan": "2",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "2f2276f2d38b495788b9f895bfd1b775"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 3 - Khoản 2]\nĐiều 3. Giải thích từ ngữ\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\n2. *Bản đồ hiện trạng sử dụng đất* là bản đồ thể hiện sự phân bố các loại đất tại một thời điểm xác định, được lập theo từng đơn vị hành chính các cấp, theo từng vùng kinh tế - xã hội.",
+        "chunk_id": 8
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "b78aad80dd9c45458183bc48e18214e0_e1",
+                "label": "LEGAL_CONCEPT",
+                "name": "Bảo vệ, cải tạo, phục hồi đất",
+                "value": "Bảo vệ, cải tạo, phục hồi đất"
+            },
+            {
+                "id": "b78aad80dd9c45458183bc48e18214e0_e2",
+                "label": "DEFINITION",
+                "name": "Định nghĩa về Bảo vệ, cải tạo, phục hồi đất",
+                "value": "là việc áp dụng các biện pháp quản lý, kỹ thuật, cơ giới, sinh học, hữu cơ tác động vào đất để xử lý đất bị ô nhiễm, phục hồi đất bị thoái hóa."
+            },
+            {
+                "id": "b78aad80dd9c45458183bc48e18214e0_e3",
+                "label": "DOCUMENT_RECORD",
+                "name": "Điều 3. Giải thích từ ngữ\nTrong Luật Đất đai số 31/2024/QH15, các từ ngữ dưới đây được hiểu như sau:\n4. Bảo vệ, cải tạo, phục hồi đất là việc áp dụng các biện pháp quản lý, kỹ thuật, cơ giới, sinh học, hữu cơ tác động vào đất để xử lý đất bị ô nhiễm, phục hồi đất bị thoái hóa.",
+                "value": "Điều 3. Giải thích từ ngữ\nTrong Luật Đất đai số 31/2024/QH15, các từ ngữ dưới đây được hiểu như sau:\n4. Bảo vệ, cải tạo, phục hồi đất là việc áp dụng các biện pháp quản lý, kỹ thuật, cơ giới, sinh học, hữu cơ tác động vào đất để xử lý đất bị ô nhiễm, phục hồi đất bị thoái hóa."
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "b78aad80dd9c45458183bc48e18214e0_e1",
+                "type": "DEFINES",
+                "target": "b78aad80dd9c45458183bc48e18214e0_e2"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "3",
+            "khoan": "4",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "b78aad80dd9c45458183bc48e18214e0"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 3 - Khoản 4]\nĐiều 3. Giải thích từ ngữ\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\n4. *Bảo vệ, cải tạo, phục hồi đất* là việc áp dụng các biện pháp quản lý, kỹ thuật, cơ giới, sinh học, hữu cơ tác động vào đất để xử lý đất bị ô nhiễm, phục hồi đất bị thoái hóa.",
+        "chunk_id": 9
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "a19bdc7461b64964acc7c2c8be9faec0_e1",
+                "label": "LEGAL_CONCEPT",
+                "name": "Chi phí đầu tư vào đất còn lại",
+                "value": "Chi phí đầu tư vào đất còn lại"
+            },
+            {
+                "id": "a19bdc7461b64964acc7c2c8be9faec0_e2",
+                "label": "DEFINITION",
+                "name": "Định nghĩa chi phí đầu tư vào đất còn lại",
+                "value": "Chi phí đầu tư vào đất còn lại là chi phí hợp lý mà người sử dụng đất đã đầu tư trực tiếp vào đất phù hợp với mục đích sử dụng đất nhưng đến thời điểm Nhà nước thu hồi đất còn chưa thu hồi hết."
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "a19bdc7461b64964acc7c2c8be9faec0_e1",
+                "type": "DEFINES",
+                "target": "a19bdc7461b64964acc7c2c8be9faec0_e2"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "3",
+            "khoan": "7",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "a19bdc7461b64964acc7c2c8be9faec0"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 3 - Khoản 7]\nĐiều 3. Giải thích từ ngữ\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\n7. *Chi phí đầu tư vào đất còn lại* là chi phí hợp lý mà người sử dụng đất đã đầu tư trực tiếp vào đất phù hợp với mục đích sử dụng đất nhưng đến thời điểm Nhà nước thu hồi đất còn chưa thu hồi hết.",
+        "chunk_id": 10
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "d4bc484373ba487196da5f052de9ec5f_e1",
+                "label": "DOCUMENT_RECORD",
+                "name": "Điều 3. Giải thích từ ngữ của Luật Đất đai số 31/2024/QH15",
+                "value": "Điều 3. Giải thích từ ngữ của Luật Đất đai số 31/2024/QH15"
+            },
+            {
+                "id": "d4bc484373ba487196da5f052de9ec5f_e2",
+                "label": "LEGAL_CONCEPT",
+                "name": "Cá nhân trực tiếp sản xuất nông nghiệp",
+                "value": "Cá nhân trực tiếp sản xuất nông nghiệp"
+            },
+            {
+                "id": "d4bc484373ba487196da5f052de9ec5f_e3",
+                "label": "DEFINITION",
+                "name": "Định nghĩa Cá nhân trực tiếp sản xuất nông nghiệp",
+                "value": "Cá nhân trực tiếp sản xuất nông nghiệp là cá nhân đã được Nhà nước giao đất, cho thuê đất, công nhận quyền sử dụng đất nông nghiệp; nhận chuyển quyền sử dụng đất nông nghiệp mà có thu nhập từ sản xuất nông nghiệp trên đất đó theo quy định của Chính phủ."
+            },
+            {
+                "id": "d4bc484373ba487196da5f052de9ec5f_e4",
+                "label": "SUBJECT",
+                "name": "Cá nhân",
+                "value": "cá nhân"
+            },
+            {
+                "id": "d4bc484373ba487196da5f052de9ec5f_e5",
+                "label": "STANDARD_CONDITION",
+                "name": "Được Nhà nước giao, cho thuê, công nhận QSDĐ nông nghiệp hoặc nhận chuyển QSDĐ nông nghiệp",
+                "value": "đã được Nhà nước giao đất, cho thuê đất, công nhận quyền sử dụng đất nông nghiệp; nhận chuyển quyền sử dụng đất nông nghiệp"
+            },
+            {
+                "id": "d4bc484373ba487196da5f052de9ec5f_e6",
+                "label": "STANDARD_CONDITION",
+                "name": "Có thu nhập từ sản xuất nông nghiệp trên đất theo quy định của Chính phủ",
+                "value": "có thu nhập từ sản xuất nông nghiệp trên đất đó theo quy định của Chính phủ"
+            },
+            {
+                "id": "d4bc484373ba487196da5f052de9ec5f_e7",
+                "label": "SUBJECT",
+                "name": "Nhà nước",
+                "value": "Nhà nước"
+            },
+            {
+                "id": "d4bc484373ba487196da5f052de9ec5f_e8",
+                "label": "SUBJECT",
+                "name": "Chính phủ",
+                "value": "Chính phủ"
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "d4bc484373ba487196da5f052de9ec5f_e2",
+                "type": "DEFINES",
+                "target": "d4bc484373ba487196da5f052de9ec5f_e3"
+            },
+            {
+                "source": "d4bc484373ba487196da5f052de9ec5f_e4",
+                "type": "MEETS_CONDITION",
+                "target": "d4bc484373ba487196da5f052de9ec5f_e5"
+            },
+            {
+                "source": "d4bc484373ba487196da5f052de9ec5f_e4",
+                "type": "MEETS_CONDITION",
+                "target": "d4bc484373ba487196da5f052de9ec5f_e6"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "3",
+            "khoan": "6",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "d4bc484373ba487196da5f052de9ec5f"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 3 - Khoản 6]\nĐiều 3. Giải thích từ ngữ\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\n6. *Cá nhân trực tiếp sản xuất nông nghiệp* là cá nhân đã được Nhà nước giao đất, cho thuê đất, công nhận quyền sử dụng đất nông nghiệp; nhận chuyển quyền sử dụng đất nông nghiệp mà có thu nhập từ sản xuất nông nghiệp trên đất đó theo quy định của Chính phủ.",
+        "chunk_id": 11
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "766627f898b44da9b98448da8e6ac29b_e1",
+                "label": "LEGAL_CONCEPT",
+                "name": "Bồi thường về đất",
+                "value": "Bồi thường về đất"
+            },
+            {
+                "id": "766627f898b44da9b98448da8e6ac29b_e2",
+                "label": "DEFINITION",
+                "name": "Định nghĩa bồi thường về đất",
+                "value": "Bồi thường về đất là việc Nhà nước trả lại giá trị quyền sử dụng đất của diện tích đất thu hồi cho người có đất thu hồi."
+            },
+            {
+                "id": "766627f898b44da9b98448da8e6ac29b_e3",
+                "label": "SUBJECT",
+                "name": "Nhà nước",
+                "value": "Nhà nước"
+            },
+            {
+                "id": "766627f898b44da9b98448da8e6ac29b_e4",
+                "label": "SUBJECT",
+                "name": "Người có đất thu hồi",
+                "value": "người có đất thu hồi"
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "766627f898b44da9b98448da8e6ac29b_e1",
+                "type": "DEFINES",
+                "target": "766627f898b44da9b98448da8e6ac29b_e2"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "3",
+            "khoan": "5",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "766627f898b44da9b98448da8e6ac29b"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 3 - Khoản 5]\nĐiều 3. Giải thích từ ngữ\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\n5. *Bồi thường về đất* là việc Nhà nước trả lại giá trị quyền sử dụng đất của diện tích đất thu hồi cho người có đất thu hồi.",
+        "chunk_id": 12
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "a0b11a8232f8433293c61cf590397c55_e1",
+                "label": "LEGAL_CONCEPT",
+                "name": "Chủ đầu tư dự án đầu tư có sử dụng đất",
+                "value": "Chủ đầu tư dự án đầu tư có sử dụng đất (sau đây gọi là chủ đầu tư)"
+            },
+            {
+                "id": "a0b11a8232f8433293c61cf590397c55_e2",
+                "label": "DEFINITION",
+                "name": "là nhà đầu tư theo quy định của pháp luật về đầu tư, pháp luật có liên quan đã được lựa chọn để thực hiện dự án đầu tư có sử dụng đất và được giao đất, cho thuê đất, chuyển mục đích sử dụng đất theo quy định của Luật Đất đai số 31/2024/QH15.",
+                "value": "là nhà đầu tư theo quy định của pháp luật về đầu tư, pháp luật có liên quan đã được lựa chọn để thực hiện dự án đầu tư có sử dụng đất và được giao đất, cho thuê đất, chuyển mục đích sử dụng đất theo quy định của Luật Đất đai số 31/2024/QH15."
+            },
+            {
+                "id": "a0b11a8232f8433293c61cf590397c55_e3",
+                "label": "SUBJECT",
+                "name": "Nhà đầu tư",
+                "value": "nhà đầu tư theo quy định của pháp luật về đầu tư, pháp luật có liên quan"
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "a0b11a8232f8433293c61cf590397c55_e1",
+                "type": "DEFINES",
+                "target": "a0b11a8232f8433293c61cf590397c55_e2"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "3",
+            "khoan": "10",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "a0b11a8232f8433293c61cf590397c55"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 3 - Khoản 10]\nĐiều 3. Giải thích từ ngữ\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\n10. *Chủ đầu tư dự án đầu tư có sử dụng đất* (sau đây gọi là chủ đầu tư) là nhà đầu tư theo quy định của pháp luật về đầu tư, pháp luật có liên quan đã được lựa chọn để thực hiện dự án đầu tư có sử dụng đất và được giao đất, cho thuê đất, chuyển mục đích sử dụng đất theo quy định của Luật này.",
+        "chunk_id": 13
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "de45cf78eee74aa3ad387d9d0c09015c_e1",
+                "label": "LEGAL_CONCEPT",
+                "name": "Chỉ tiêu sử dụng đất",
+                "value": "Chỉ tiêu sử dụng đất"
+            },
+            {
+                "id": "de45cf78eee74aa3ad387d9d0c09015c_e2",
+                "label": "DEFINITION",
+                "name": "Định nghĩa Chỉ tiêu sử dụng đất",
+                "value": "Chỉ tiêu sử dụng đất là diện tích đất của từng loại đất được xác định trong quy hoạch, kế hoạch sử dụng đất các cấp do cơ quan nhà nước có thẩm quyền xác định để phân bổ trong quá trình lập quy hoạch, kế hoạch sử dụng đất."
+            },
+            {
+                "id": "de45cf78eee74aa3ad387d9d0c09015c_e3",
+                "label": "SUBJECT",
+                "name": "Cơ quan nhà nước có thẩm quyền",
+                "value": "cơ quan nhà nước có thẩm quyền"
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "de45cf78eee74aa3ad387d9d0c09015c_e1",
+                "type": "DEFINES",
+                "target": "de45cf78eee74aa3ad387d9d0c09015c_e2"
+            },
+            {
+                "source": "de45cf78eee74aa3ad387d9d0c09015c_e3",
+                "type": "HAS_AUTHORITY",
+                "target": "de45cf78eee74aa3ad387d9d0c09015c_e1"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "3",
+            "khoan": "8",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "de45cf78eee74aa3ad387d9d0c09015c"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 3 - Khoản 8]\nĐiều 3. Giải thích từ ngữ\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\n8. *Chỉ tiêu sử dụng đất* là diện tích đất của từng loại đất được xác định trong quy hoạch, kế hoạch sử dụng đất các cấp do cơ quan nhà nước có thẩm quyền xác định để phân bổ trong quá trình lập quy hoạch, kế hoạch sử dụng đất.",
+        "chunk_id": 14
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "8504de1fa59d4ef9b14371252a938208_e1",
+                "label": "LEGAL_CONCEPT",
+                "name": "Chiếm đất",
+                "value": "Chiếm đất"
+            },
+            {
+                "id": "8504de1fa59d4ef9b14371252a938208_e2",
+                "label": "DEFINITION",
+                "name": "Định nghĩa chiếm đất",
+                "value": "Chiếm đất là việc sử dụng đất do Nhà nước đã quản lý mà chưa được cơ quan nhà nước có thẩm quyền cho phép hoặc sử dụng đất của người sử dụng đất hợp pháp khác mà chưa được người đó cho phép."
+            },
+            {
+                "id": "8504de1fa59d4ef9b14371252a938208_e3",
+                "label": "DOCUMENT_RECORD",
+                "name": "Điều 3. Giải thích từ ngữ\nTrong Luật Đất đai số 31/2024/QH15, các từ ngữ dưới đây được hiểu như sau:\n9. *Chiếm đất* là việc sử dụng đất do Nhà nước đã quản lý mà chưa được cơ quan nhà nước có thẩm quyền cho phép hoặc sử dụng đất của người sử dụng đất hợp pháp khác mà chưa được người đó cho phép.",
+                "value": "Điều 3. Giải thích từ ngữ\nTrong Luật Đất đai số 31/2024/QH15, các từ ngữ dưới đây được hiểu như sau:\n9. *Chiếm đất* là việc sử dụng đất do Nhà nước đã quản lý mà chưa được cơ quan nhà nước có thẩm quyền cho phép hoặc sử dụng đất của người sử dụng đất hợp pháp khác mà chưa được người đó cho phép."
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "8504de1fa59d4ef9b14371252a938208_e1",
+                "type": "DEFINES",
+                "target": "8504de1fa59d4ef9b14371252a938208_e2"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "3",
+            "khoan": "9",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "8504de1fa59d4ef9b14371252a938208"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 3 - Khoản 9]\nĐiều 3. Giải thích từ ngữ\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\n9. *Chiếm đất* là việc sử dụng đất do Nhà nước đã quản lý mà chưa được cơ quan nhà nước có thẩm quyền cho phép hoặc sử dụng đất của người sử dụng đất hợp pháp khác mà chưa được người đó cho phép.",
+        "chunk_id": 15
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "2037897953184a9e85c457c4aac189d8_e1",
+                "label": "LEGAL_CONCEPT",
+                "name": "Chuyển quyền sử dụng đất",
+                "value": "Chuyển quyền sử dụng đất"
+            },
+            {
+                "id": "2037897953184a9e85c457c4aac189d8_e2",
+                "label": "DEFINITION",
+                "name": "Định nghĩa chuyển quyền sử dụng đất",
+                "value": "là việc chuyển giao quyền sử dụng đất từ người này sang người khác thông qua hình thức chuyển đổi, chuyển nhượng, thừa kế, tặng cho quyền sử dụng đất, góp vốn bằng quyền sử dụng đất."
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "2037897953184a9e85c457c4aac189d8_e1",
+                "type": "DEFINES",
+                "target": "2037897953184a9e85c457c4aac189d8_e2"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "3",
+            "khoan": "12",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "2037897953184a9e85c457c4aac189d8"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 3 - Khoản 12]\nĐiều 3. Giải thích từ ngữ\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\n12. *Chuyển quyền sử dụng đất* là việc chuyển giao quyền sử dụng đất từ người này sang người khác thông qua hình thức chuyển đổi, chuyển nhượng, thừa kế, tặng cho quyền sử dụng đất, góp vốn bằng quyền sử dụng đất.",
+        "chunk_id": 16
+    },
+    {
+        "Level_3_Foundations": [
+            {
+                "id": "a846c84600924ba587706211aa18a9a1_e1",
+                "label": "LEGAL_CONCEPT",
+                "name": "Chuyển mục đích sử dụng đất",
+                "value": "Chuyển mục đích sử dụng đất"
+            },
+            {
+                "id": "a846c84600924ba587706211aa18a9a1_e2",
+                "label": "DEFINITION",
+                "name": "Chuyển mục đích sử dụng đất là việc người sử dụng đất được thay đổi từ mục đích sử dụng đất này sang mục đích sử dụng đất khác theo quy định của Luật Đất đai số 31/2024/QH15.",
+                "value": "Chuyển mục đích sử dụng đất là việc người sử dụng đất được thay đổi từ mục đích sử dụng đất này sang mục đích sử dụng đất khác theo quy định của Luật Đất đai số 31/2024/QH15."
+            },
+            {
+                "id": "a846c84600924ba587706211aa18a9a1_e3",
+                "label": "SUBJECT",
+                "name": "Người sử dụng đất",
+                "value": "người sử dụng đất"
+            }
+        ],
+        "Level_2_Rules_Actions": [],
+        "Attributes_Measures": [],
+        "Relationships": [
+            {
+                "source": "a846c84600924ba587706211aa18a9a1_e1",
+                "type": "DEFINES",
+                "target": "a846c84600924ba587706211aa18a9a1_e2"
+            }
+        ],
+        "metadata": {
+            "document": "Luật Đất đai số 31/2024/QH15",
+            "phan": null,
+            "chuong": null,
+            "muc": null,
+            "dieu": "3",
+            "khoan": "11",
+            "diem": null,
+            "type": "LEGAL_RULE",
+            "chunk_uuid": "a846c84600924ba587706211aa18a9a1"
+        },
+        "original_content": "[Văn bản: Luật Đất đai số 31/2024/QH15 - Điều 3 - Khoản 11]\nĐiều 3. Giải thích từ ngữ\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\n11. *Chuyển mục đích sử dụng đất* là việc người sử dụng đất được thay đổi từ mục đích sử dụng đất này sang mục đích sử dụng đất khác theo quy định của Luật này.",
+        "chunk_id": 17
+    }
+]

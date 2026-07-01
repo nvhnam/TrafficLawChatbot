@@ -1,0 +1,2008 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "admin-script.js",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L1",
+      "id": "admin_script_js",
+      "community": 1,
+      "norm_label": "admin-script.js"
+    },
+    {
+      "label": "currentUserStr",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L4",
+      "id": "web_admin_script_currentuserstr",
+      "community": 1,
+      "norm_label": "currentuserstr"
+    },
+    {
+      "label": "user",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L8",
+      "id": "web_admin_script_user",
+      "community": 1,
+      "norm_label": "user"
+    },
+    {
+      "label": "toggleAdminSettings()",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L17",
+      "id": "web_admin_script_toggleadminsettings",
+      "community": 1,
+      "norm_label": "toggleadminsettings()"
+    },
+    {
+      "label": "menu",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L23",
+      "id": "web_admin_script_menu",
+      "community": 1,
+      "norm_label": "menu"
+    },
+    {
+      "label": "logout()",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L31",
+      "id": "web_admin_script_logout",
+      "community": 1,
+      "norm_label": "logout()"
+    },
+    {
+      "label": "switchAdminTab()",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L43",
+      "id": "web_admin_script_switchadmintab",
+      "community": 8,
+      "norm_label": "switchadmintab()"
+    },
+    {
+      "label": "fetchSystemStatsAPI()",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L71",
+      "id": "web_admin_script_fetchsystemstatsapi",
+      "community": 8,
+      "norm_label": "fetchsystemstatsapi()"
+    },
+    {
+      "label": "dropzone",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L163",
+      "id": "web_admin_script_dropzone",
+      "community": 1,
+      "norm_label": "dropzone"
+    },
+    {
+      "label": "fileInput",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L164",
+      "id": "web_admin_script_fileinput",
+      "community": 1,
+      "norm_label": "fileinput"
+    },
+    {
+      "label": "fileListContainer",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L165",
+      "id": "web_admin_script_filelistcontainer",
+      "community": 1,
+      "norm_label": "filelistcontainer"
+    },
+    {
+      "label": "fileList",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L166",
+      "id": "web_admin_script_filelist",
+      "community": 1,
+      "norm_label": "filelist"
+    },
+    {
+      "label": "importBtn",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L167",
+      "id": "web_admin_script_importbtn",
+      "community": 1,
+      "norm_label": "importbtn"
+    },
+    {
+      "label": "statusContainer",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L168",
+      "id": "web_admin_script_statuscontainer",
+      "community": 1,
+      "norm_label": "statuscontainer"
+    },
+    {
+      "label": "statusText",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L169",
+      "id": "web_admin_script_statustext",
+      "community": 1,
+      "norm_label": "statustext"
+    },
+    {
+      "label": "statusIcon",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L170",
+      "id": "web_admin_script_statusicon",
+      "community": 1,
+      "norm_label": "statusicon"
+    },
+    {
+      "label": "selectedFiles",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L172",
+      "id": "web_admin_script_selectedfiles",
+      "community": 1,
+      "norm_label": "selectedfiles"
+    },
+    {
+      "label": "files",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L192",
+      "id": "web_admin_script_files",
+      "community": 1,
+      "norm_label": "files"
+    },
+    {
+      "label": "promises",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L195",
+      "id": "web_admin_script_promises",
+      "community": 1,
+      "norm_label": "promises"
+    },
+    {
+      "label": "item",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L197",
+      "id": "web_admin_script_item",
+      "community": 1,
+      "norm_label": "item"
+    },
+    {
+      "label": "traverseFileTree()",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L214",
+      "id": "web_admin_script_traversefiletree",
+      "community": 1,
+      "norm_label": "traversefiletree()"
+    },
+    {
+      "label": "processNewFiles()",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L237",
+      "id": "web_admin_script_processnewfiles",
+      "community": 7,
+      "norm_label": "processnewfiles()"
+    },
+    {
+      "label": "renderFileList()",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L256",
+      "id": "web_admin_script_renderfilelist",
+      "community": 7,
+      "norm_label": "renderfilelist()"
+    },
+    {
+      "label": "formatBytes()",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L295",
+      "id": "web_admin_script_formatbytes",
+      "community": 1,
+      "norm_label": "formatbytes()"
+    },
+    {
+      "label": "formData",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L309",
+      "id": "web_admin_script_formdata",
+      "community": 1,
+      "norm_label": "formdata"
+    },
+    {
+      "label": "showStatus()",
+      "file_type": "code",
+      "source_file": "admin-script.js",
+      "source_location": "L356",
+      "id": "web_admin_script_showstatus",
+      "community": 7,
+      "norm_label": "showstatus()"
+    },
+    {
+      "label": "app.py",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L1",
+      "id": "app_py",
+      "community": 2,
+      "norm_label": "app.py"
+    },
+    {
+      "label": "init_user_db()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L47",
+      "id": "web_app_init_user_db",
+      "community": 2,
+      "norm_label": "init_user_db()"
+    },
+    {
+      "label": "register()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L78",
+      "id": "web_app_register",
+      "community": 2,
+      "norm_label": "register()"
+    },
+    {
+      "label": "login()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L103",
+      "id": "web_app_login",
+      "community": 2,
+      "norm_label": "login()"
+    },
+    {
+      "label": "base64ToBGR()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L135",
+      "id": "web_app_base64tobgr",
+      "community": 2,
+      "norm_label": "base64tobgr()"
+    },
+    {
+      "label": "create_response()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L141",
+      "id": "web_app_create_response",
+      "community": 2,
+      "norm_label": "create_response()"
+    },
+    {
+      "label": "check_progress()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L149",
+      "id": "web_app_check_progress",
+      "community": 2,
+      "norm_label": "check_progress()"
+    },
+    {
+      "label": "process_folder_and_build()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L156",
+      "id": "web_app_process_folder_and_build",
+      "community": 2,
+      "norm_label": "process_folder_and_build()"
+    },
+    {
+      "label": "process_document()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L300",
+      "id": "web_app_process_document",
+      "community": 2,
+      "norm_label": "process_document()"
+    },
+    {
+      "label": "build_graph()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L350",
+      "id": "web_app_build_graph",
+      "community": 2,
+      "norm_label": "build_graph()"
+    },
+    {
+      "label": "chat_stream()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L378",
+      "id": "web_app_chat_stream",
+      "community": 2,
+      "norm_label": "chat_stream()"
+    },
+    {
+      "label": "ocr_text()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L423",
+      "id": "web_app_ocr_text",
+      "community": 2,
+      "norm_label": "ocr_text()"
+    },
+    {
+      "label": "answer_with_image_input()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L470",
+      "id": "web_app_answer_with_image_input",
+      "community": 2,
+      "norm_label": "answer_with_image_input()"
+    },
+    {
+      "label": "get_system_stats()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L521",
+      "id": "web_app_get_system_stats",
+      "community": 2,
+      "norm_label": "get_system_stats()"
+    },
+    {
+      "label": "Kh\u1edfi t\u1ea1o database v\u00e0 b\u1ea3ng users n\u1ebfu ch\u01b0a c\u00f3",
+      "file_type": "rationale",
+      "source_file": "app.py",
+      "source_location": "L48",
+      "id": "web_app_rationale_48",
+      "community": 2,
+      "norm_label": "khoi tao database va bang users neu chua co"
+    },
+    {
+      "label": "API l\u1ea5y danh s\u00e1ch V\u0103n b\u1ea3n v\u00e0 T\u1ed5ng s\u1ed1 \u0110o\u1ea1n v\u0103n (Chunks) t\u1eeb Neo4j",
+      "file_type": "rationale",
+      "source_file": "app.py",
+      "source_location": "L522",
+      "id": "web_app_rationale_522",
+      "community": 2,
+      "norm_label": "api lay danh sach van ban va tong so \u0111oan van (chunks) tu neo4j"
+    },
+    {
+      "label": "db.js",
+      "file_type": "code",
+      "source_file": "db.js",
+      "source_location": "L1",
+      "id": "db_js",
+      "community": 3,
+      "norm_label": "db.js"
+    },
+    {
+      "label": "TrafficLawDB",
+      "file_type": "code",
+      "source_file": "db.js",
+      "source_location": "L8",
+      "id": "web_db_trafficlawdb",
+      "community": 3,
+      "norm_label": "trafficlawdb"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "db.js",
+      "source_location": "L9",
+      "id": "web_db_trafficlawdb_constructor",
+      "community": 3,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".init()",
+      "file_type": "code",
+      "source_file": "db.js",
+      "source_location": "L13",
+      "id": "web_db_trafficlawdb_init",
+      "community": 3,
+      "norm_label": ".init()"
+    },
+    {
+      "label": ".addSession()",
+      "file_type": "code",
+      "source_file": "db.js",
+      "source_location": "L41",
+      "id": "web_db_trafficlawdb_addsession",
+      "community": 3,
+      "norm_label": ".addsession()"
+    },
+    {
+      "label": ".getAllSessions()",
+      "file_type": "code",
+      "source_file": "db.js",
+      "source_location": "L52",
+      "id": "web_db_trafficlawdb_getallsessions",
+      "community": 3,
+      "norm_label": ".getallsessions()"
+    },
+    {
+      "label": ".deleteSession()",
+      "file_type": "code",
+      "source_file": "db.js",
+      "source_location": "L67",
+      "id": "web_db_trafficlawdb_deletesession",
+      "community": 3,
+      "norm_label": ".deletesession()"
+    },
+    {
+      "label": ".addMessage()",
+      "file_type": "code",
+      "source_file": "db.js",
+      "source_location": "L94",
+      "id": "web_db_trafficlawdb_addmessage",
+      "community": 3,
+      "norm_label": ".addmessage()"
+    },
+    {
+      "label": ".getMessagesBySession()",
+      "file_type": "code",
+      "source_file": "db.js",
+      "source_location": "L128",
+      "id": "web_db_trafficlawdb_getmessagesbysession",
+      "community": 3,
+      "norm_label": ".getmessagesbysession()"
+    },
+    {
+      "label": "mock-api.js",
+      "file_type": "code",
+      "source_file": "mock-api.js",
+      "source_location": "L1",
+      "id": "mock_api_js",
+      "community": 6,
+      "norm_label": "mock-api.js"
+    },
+    {
+      "label": "RESPONSES",
+      "file_type": "code",
+      "source_file": "mock-api.js",
+      "source_location": "L5",
+      "id": "web_mock_api_responses",
+      "community": 6,
+      "norm_label": "responses"
+    },
+    {
+      "label": "getMockChatResponse()",
+      "file_type": "code",
+      "source_file": "mock-api.js",
+      "source_location": "L106",
+      "id": "web_mock_api_getmockchatresponse",
+      "community": 6,
+      "norm_label": "getmockchatresponse()"
+    },
+    {
+      "label": "script.js",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L1",
+      "id": "script_js",
+      "community": 0,
+      "norm_label": "script.js"
+    },
+    {
+      "label": "currentUserStr",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L4",
+      "id": "web_script_currentuserstr",
+      "community": 0,
+      "norm_label": "currentuserstr"
+    },
+    {
+      "label": "nameParts",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L13",
+      "id": "web_script_nameparts",
+      "community": 0,
+      "norm_label": "nameparts"
+    },
+    {
+      "label": "initial",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L15",
+      "id": "web_script_initial",
+      "community": 0,
+      "norm_label": "initial"
+    },
+    {
+      "label": "avatarBtn",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L17",
+      "id": "web_script_avatarbtn",
+      "community": 0,
+      "norm_label": "avatarbtn"
+    },
+    {
+      "label": "displayUsername",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L20",
+      "id": "web_script_displayusername",
+      "community": 0,
+      "norm_label": "displayusername"
+    },
+    {
+      "label": "displayRole",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L23",
+      "id": "web_script_displayrole",
+      "community": 0,
+      "norm_label": "displayrole"
+    },
+    {
+      "label": "adminLink",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L30",
+      "id": "web_script_adminlink",
+      "community": 0,
+      "norm_label": "adminlink"
+    },
+    {
+      "label": "toggleUserMenu()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L41",
+      "id": "web_script_toggleusermenu",
+      "community": 0,
+      "norm_label": "toggleusermenu()"
+    },
+    {
+      "label": "dropdown",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L47",
+      "id": "web_script_dropdown",
+      "community": 0,
+      "norm_label": "dropdown"
+    },
+    {
+      "label": "logout()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L54",
+      "id": "web_script_logout",
+      "community": 0,
+      "norm_label": "logout()"
+    },
+    {
+      "label": "toggleSidebarSettings()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L59",
+      "id": "web_script_togglesidebarsettings",
+      "community": 0,
+      "norm_label": "togglesidebarsettings()"
+    },
+    {
+      "label": "input",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L79",
+      "id": "web_script_input",
+      "community": 0,
+      "norm_label": "input"
+    },
+    {
+      "label": "messages",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L80",
+      "id": "web_script_messages",
+      "community": 0,
+      "norm_label": "messages"
+    },
+    {
+      "label": "welcome",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L81",
+      "id": "web_script_welcome",
+      "community": 0,
+      "norm_label": "welcome"
+    },
+    {
+      "label": "imageUploadInput",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L82",
+      "id": "web_script_imageuploadinput",
+      "community": 0,
+      "norm_label": "imageuploadinput"
+    },
+    {
+      "label": "imagePreviewContainer",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L83",
+      "id": "web_script_imagepreviewcontainer",
+      "community": 0,
+      "norm_label": "imagepreviewcontainer"
+    },
+    {
+      "label": "imagePreview",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L84",
+      "id": "web_script_imagepreview",
+      "community": 0,
+      "norm_label": "imagepreview"
+    },
+    {
+      "label": "processSelectedFile()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L99",
+      "id": "web_script_processselectedfile",
+      "community": 5,
+      "norm_label": "processselectedfile()"
+    },
+    {
+      "label": "removeImage()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L113",
+      "id": "web_script_removeimage",
+      "community": 4,
+      "norm_label": "removeimage()"
+    },
+    {
+      "label": "sendBtn",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L126",
+      "id": "web_script_sendbtn",
+      "community": 0,
+      "norm_label": "sendbtn"
+    },
+    {
+      "label": "backToHome()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L145",
+      "id": "web_script_backtohome",
+      "community": 4,
+      "norm_label": "backtohome()"
+    },
+    {
+      "label": "createNewChat()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L147",
+      "id": "web_script_createnewchat",
+      "community": 4,
+      "norm_label": "createnewchat()"
+    },
+    {
+      "label": "renderSidebar()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L162",
+      "id": "web_script_rendersidebar",
+      "community": 4,
+      "norm_label": "rendersidebar()"
+    },
+    {
+      "label": "loadChat()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L190",
+      "id": "web_script_loadchat",
+      "community": 4,
+      "norm_label": "loadchat()"
+    },
+    {
+      "label": "deleteChat()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L208",
+      "id": "web_script_deletechat",
+      "community": 4,
+      "norm_label": "deletechat()"
+    },
+    {
+      "label": "clearAllHistory()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L216",
+      "id": "web_script_clearallhistory",
+      "community": 4,
+      "norm_label": "clearallhistory()"
+    },
+    {
+      "label": "toggleSidebar()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L227",
+      "id": "web_script_togglesidebar",
+      "community": 0,
+      "norm_label": "togglesidebar()"
+    },
+    {
+      "label": "handleSend()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L241",
+      "id": "web_script_handlesend",
+      "community": 5,
+      "norm_label": "handlesend()"
+    },
+    {
+      "label": "appendMessageUI()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L353",
+      "id": "web_script_appendmessageui",
+      "community": 5,
+      "norm_label": "appendmessageui()"
+    },
+    {
+      "label": "updateMessage()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L374",
+      "id": "web_script_updatemessage",
+      "community": 5,
+      "norm_label": "updatemessage()"
+    },
+    {
+      "label": "scrollToBottom()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L394",
+      "id": "web_script_scrolltobottom",
+      "community": 5,
+      "norm_label": "scrolltobottom()"
+    },
+    {
+      "label": "dragOverlay",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L402",
+      "id": "web_script_dragoverlay",
+      "community": 0,
+      "norm_label": "dragoverlay"
+    },
+    {
+      "label": "preventDefaults()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L408",
+      "id": "web_script_preventdefaults",
+      "community": 0,
+      "norm_label": "preventdefaults()"
+    },
+    {
+      "label": "highlight()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L417",
+      "id": "web_script_highlight",
+      "community": 0,
+      "norm_label": "highlight()"
+    },
+    {
+      "label": "unhighlight()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L424",
+      "id": "web_script_unhighlight",
+      "community": 0,
+      "norm_label": "unhighlight()"
+    },
+    {
+      "label": "handleDrop()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L435",
+      "id": "web_script_handledrop",
+      "community": 5,
+      "norm_label": "handledrop()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_currentuserstr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_toggleadminsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_menu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_logout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_switchadmintab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_fetchsystemstatsapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_dropzone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_fileinput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_filelistcontainer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_filelist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_importbtn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_statuscontainer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_statustext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L170",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_statusicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L172",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_selectedfiles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L192",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L195",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_promises",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L197",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_item",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L214",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_traversefiletree",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L237",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_processnewfiles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L256",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_renderfilelist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L295",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_formatbytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L309",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_formdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L356",
+      "weight": 1.0,
+      "source": "admin_script_js",
+      "target": "web_admin_script_showstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "web_admin_script_switchadmintab",
+      "target": "web_admin_script_fetchsystemstatsapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L247",
+      "weight": 1.0,
+      "source": "web_admin_script_processnewfiles",
+      "target": "web_admin_script_showstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "admin-script.js",
+      "source_location": "L252",
+      "weight": 1.0,
+      "source": "web_admin_script_processnewfiles",
+      "target": "web_admin_script_renderfilelist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_init_user_db",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_register",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_base64tobgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_create_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_check_progress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_process_folder_and_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L300",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_process_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L350",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_build_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L378",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_chat_stream",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L423",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_ocr_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L470",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_answer_with_image_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L521",
+      "weight": 1.0,
+      "source": "app_py",
+      "target": "web_app_get_system_stats",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "web_app_rationale_48",
+      "target": "web_app_init_user_db",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L485",
+      "weight": 1.0,
+      "source": "web_app_answer_with_image_input",
+      "target": "web_app_base64tobgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "web_app_check_progress",
+      "target": "web_app_create_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "web_app_process_folder_and_build",
+      "target": "web_app_create_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L302",
+      "weight": 1.0,
+      "source": "web_app_process_document",
+      "target": "web_app_create_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L357",
+      "weight": 1.0,
+      "source": "web_app_build_graph",
+      "target": "web_app_create_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L565",
+      "weight": 1.0,
+      "source": "web_app_get_system_stats",
+      "target": "web_app_create_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L522",
+      "weight": 1.0,
+      "source": "web_app_rationale_522",
+      "target": "web_app_get_system_stats",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "db_js",
+      "target": "web_db_trafficlawdb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "web_db_trafficlawdb",
+      "target": "web_db_trafficlawdb_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "web_db_trafficlawdb",
+      "target": "web_db_trafficlawdb_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "web_db_trafficlawdb",
+      "target": "web_db_trafficlawdb_addsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "web_db_trafficlawdb",
+      "target": "web_db_trafficlawdb_getallsessions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "web_db_trafficlawdb",
+      "target": "web_db_trafficlawdb_deletesession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "web_db_trafficlawdb",
+      "target": "web_db_trafficlawdb_addmessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "web_db_trafficlawdb",
+      "target": "web_db_trafficlawdb_getmessagesbysession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "web_db_trafficlawdb_addsession",
+      "target": "web_db_trafficlawdb_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "web_db_trafficlawdb_getallsessions",
+      "target": "web_db_trafficlawdb_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "web_db_trafficlawdb_deletesession",
+      "target": "web_db_trafficlawdb_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "web_db_trafficlawdb_addmessage",
+      "target": "web_db_trafficlawdb_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "db.js",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "web_db_trafficlawdb_getmessagesbysession",
+      "target": "web_db_trafficlawdb_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mock-api.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "mock_api_js",
+      "target": "web_mock_api_responses",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mock-api.js",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "mock_api_js",
+      "target": "web_mock_api_getmockchatresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_currentuserstr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_nameparts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_initial",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_avatarbtn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_displayusername",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_displayrole",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_adminlink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_toggleusermenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_dropdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_logout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_togglesidebarsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_messages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_welcome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_imageuploadinput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_imagepreviewcontainer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_imagepreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_processselectedfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_removeimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L235",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_sendbtn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_backtohome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_createnewchat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_rendersidebar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_loadchat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L208",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_deletechat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L216",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_clearallhistory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_togglesidebar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L241",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_handlesend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L353",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_appendmessageui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L374",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_updatemessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L394",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_scrolltobottom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L402",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_dragoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L408",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_preventdefaults",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L417",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_highlight",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L424",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_unhighlight",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L435",
+      "weight": 1.0,
+      "source": "script_js",
+      "target": "web_script_handledrop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "web_script_processselectedfile",
+      "target": "web_script_scrolltobottom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L447",
+      "weight": 1.0,
+      "source": "web_script_handledrop",
+      "target": "web_script_processselectedfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "web_script_createnewchat",
+      "target": "web_script_removeimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L289",
+      "weight": 1.0,
+      "source": "web_script_handlesend",
+      "target": "web_script_removeimage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "web_script_backtohome",
+      "target": "web_script_createnewchat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L211",
+      "weight": 1.0,
+      "source": "web_script_deletechat",
+      "target": "web_script_createnewchat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L222",
+      "weight": 1.0,
+      "source": "web_script_clearallhistory",
+      "target": "web_script_createnewchat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "web_script_loadchat",
+      "target": "web_script_rendersidebar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "web_script_deletechat",
+      "target": "web_script_rendersidebar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "web_script_clearallhistory",
+      "target": "web_script_rendersidebar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "web_script_handlesend",
+      "target": "web_script_rendersidebar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L282",
+      "weight": 1.0,
+      "source": "web_script_handlesend",
+      "target": "web_script_appendmessageui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L329",
+      "weight": 1.0,
+      "source": "web_script_handlesend",
+      "target": "web_script_updatemessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L370",
+      "weight": 1.0,
+      "source": "web_script_appendmessageui",
+      "target": "web_script_scrolltobottom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L391",
+      "weight": 1.0,
+      "source": "web_script_updatemessage",
+      "target": "web_script_scrolltobottom",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

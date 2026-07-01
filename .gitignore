@@ -1,0 +1,6 @@
+weight/
+__pycache__/
+.env
+*.db
+venv/
+.venv/
