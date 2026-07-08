@@ -1,0 +1,39 @@
+database:
+  uri: "bolt://localhost:7687"
+  name: "neo4j"
+
+models:
+  pro: "gemini-2.5-pro"
+  flash: "gemini-2.5-flash"
+  preview: "gemini-3-flash-preview"
+  # ingestion: "gemini-3.5-flash"
+  ingestion: "gemini-2.5-flash"
+  # Fallback chain for PDF ingestion (Markdown transcription + entity/relationship
+  # extraction). Tried in order; on a 429/quota error the next model is used
+  # automatically. Verify these IDs are valid for your API key/region and reorder
+  # freely - these are just reasonable placeholders.
+  ingestion_fallback:
+    - "gemini-2.5-flash"
+    - "gemini-3.5-flash"
+    - "gemini-2.5-pro"
+    - "gemini-3.1-flash-lite"
+    - "gemini-3-flash-preview"
+    - "gemini-3-flash-lite"
+    - "gemini-2.0-flash"
+    - "gemini-2.5-flash-lite"
+    - "gemini-2.0-flash-lite"
+  ingestion_rate_limit:
+    min_interval_seconds: 30
+    max_calls_per_minute: 2
+  embedding: "AITeamVN/Vietnamese_Embedding"
+
+generation_config:
+  temperature: 0
+
+# Toggle the local (non-Gemini) ingestion pipeline. When both are true, PDF->Markdown
+# uses the local Docling+VietnameseOCR pipeline (backend/markdown_converter) and entity
+# extraction uses the local regex extractor (backend/ingestion/get_entities_local.py)
+# instead of Gemini. Set to false to fall back to the original Gemini-based stages.
+ingestion:
+  use_local_ocr: true
+  use_local_extraction: true

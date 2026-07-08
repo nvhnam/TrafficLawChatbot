@@ -4,3 +4,14 @@ __pycache__/
 *.db
 venv/
 .venv/
+
+plan
+docs/
+docs
+
+# Runtime artifacts / dữ liệu người dùng - không phải source code
+cloud_file_storage/
+cloud_file_json_prepare_upload_storage/
+folder_check/
+startup_log.txt
+startup_err.txt
