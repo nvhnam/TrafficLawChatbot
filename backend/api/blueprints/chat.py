@@ -93,12 +93,12 @@ def answer_with_image_input():
 
     try:
         bot = _get_bot()
-        preprocess_resp = bot.llm_model.generate_content(
+        preprocess_text = bot.generate_with_fallback(
             f'Bạn là chuyên gia phân tích tài liệu. Văn bản quét được: "{extracted}"\n'
             "Nhiệm vụ: Nếu là biên bản vi phạm, trích xuất mô tả hành vi vi phạm. "
             "Ngược lại tóm tắt nội dung. Chỉ trả về kết quả, không giải thích."
         )
-        context = preprocess_resp.text.strip()
+        context = preprocess_text.strip() if preprocess_text else extracted
     except Exception:
         context = extracted
 

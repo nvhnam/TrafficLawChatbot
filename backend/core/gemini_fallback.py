@@ -2,7 +2,7 @@ import logging
 import threading
 import time
 from collections import defaultdict, deque
-from typing import Callable, Optional, Sequence, Tuple
+from typing import Callable, Iterable, Optional, Sequence, Tuple
 
 logger = logging.getLogger(__name__)
 
@@ -81,3 +81,53 @@ def call_with_fallback(
 
     logger.critical("All fallback models exhausted. Last error: %s", last_exc)
     return None, None
+
+
+def call_with_fallback_stream(
+    call_fn: Callable[[str], Iterable[str]],
+    models: Sequence[str],
+    *,
+    min_interval: float = 4.0,
+    max_per_minute: int = 10,
+):
+    """Streaming counterpart to `call_with_fallback`.
+
+    `call_fn(model_name)` must return an iterable/generator of text chunks (e.g.
+    a `generate_content(..., stream=True)` response). Yields `(chunk_text,
+    model_name)` as chunks arrive, switching to the next model in `models` if a
+    model fails *before* yielding anything for it (a clean swap - no partial
+    content was sent yet, so nothing is duplicated). If a model fails *after*
+    already yielding some content, the stream stops rather than restarting on a
+    different model, since re-issuing the same prompt elsewhere would duplicate
+    or corrupt what the caller already forwarded to the end user.
+    """
+    last_exc: Optional[Exception] = None
+    for model_name in models:
+        _throttle(model_name, min_interval, max_per_minute)
+        yielded_any_for_this_model = False
+        try:
+            for chunk in call_fn(model_name):
+                if chunk:
+                    yielded_any_for_this_model = True
+                    yield chunk, model_name
+            return
+        except Exception as exc:
+            last_exc = exc
+            if yielded_any_for_this_model:
+                logger.error(
+                    "Model '%s' failed mid-stream after partial output was already sent: %s",
+                    model_name, exc,
+                )
+                return
+            if _is_quota_error(exc):
+                logger.warning(
+                    "Model '%s' hit its quota/rate limit; switching to the next fallback model.",
+                    model_name,
+                )
+            else:
+                logger.warning(
+                    "Model '%s' streaming call failed before yielding any content: %s",
+                    model_name, exc,
+                )
+
+    logger.critical("All fallback models exhausted for streaming call. Last error: %s", last_exc)

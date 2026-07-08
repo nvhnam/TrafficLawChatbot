@@ -9,6 +9,7 @@ from neo4j import GraphDatabase
 from backend.config import *
 from backend.chatbot.utils import *
 from backend.core.embedding import get_embedding_model
+from backend.core.gemini_fallback import call_with_fallback, call_with_fallback_stream
 
 logger = logging.getLogger(__name__)
 
@@ -17,14 +18,7 @@ class GraphRAG_Bot:
     def __init__(self):
         genai.configure(api_key=API_KEY)
         self.generation_config = GENERATION_CONFIG
-        self.llm_model = genai.GenerativeModel(
-            MODEL_FLASH,
-            generation_config=self.generation_config
-        )
-        self.llm_model_3 = genai.GenerativeModel(
-            MODEL_3,
-            generation_config=self.generation_config
-        )
+        self._models_cache = {}
         self.vector_model = get_embedding_model()
         self.driver = GraphDatabase.driver(URI, auth=(USER_NEO4J, PASSWORD_NEO4J))
         self.prompt_rewrite_query = prompt_rewrite_query
@@ -34,6 +28,53 @@ class GraphRAG_Bot:
 
     def close(self):
         self.driver.close()
+
+    def _get_model(self, model_name):
+        if model_name not in self._models_cache:
+            self._models_cache[model_name] = genai.GenerativeModel(
+                model_name, generation_config=self.generation_config
+            )
+        return self._models_cache[model_name]
+
+    def generate_with_fallback(self, prompt_or_messages):
+        """Single-shot (non-streaming) generation that cascades through every
+        model in models.ingestion_fallback (config.yaml) on quota/rate errors,
+        instead of failing outright on one fixed model. Returns the response
+        text, or None if every fallback model was exhausted."""
+        def _do_call(model_name):
+            resp = self._get_model(model_name).generate_content(prompt_or_messages)
+            return self._safe_get_text(resp)
+
+        text, used_model = call_with_fallback(
+            _do_call,
+            MODEL_INGESTION_FALLBACK,
+            min_interval=CHAT_MIN_INTERVAL_SECONDS,
+            max_per_minute=CHAT_MAX_CALLS_PER_MINUTE,
+        )
+        return text
+
+    def _stream_with_fallback(self, messages):
+        """Streaming counterpart of generate_with_fallback: yields text chunks,
+        cascading through the fallback model chain if a model fails before
+        yielding anything."""
+        def _do_stream(model_name):
+            response = self._get_model(model_name).generate_content(messages, stream=True)
+            for chunk in response:
+                try:
+                    if chunk.candidates and chunk.candidates[0].content.parts:
+                        text_data = chunk.text
+                        if text_data:
+                            yield text_data
+                except ValueError:
+                    continue
+
+        for text_data, used_model in call_with_fallback_stream(
+            _do_stream,
+            MODEL_INGESTION_FALLBACK,
+            min_interval=CHAT_MIN_INTERVAL_SECONDS,
+            max_per_minute=CHAT_MAX_CALLS_PER_MINUTE,
+        ):
+            yield text_data
 
     def clean_for_lucene(self, text):
         # Làm sạch ký tự đặc biệt
@@ -57,42 +98,27 @@ class GraphRAG_Bot:
 
         prompt = self.prompt_rewrite_query.replace("{history_text}", history_text).replace("{user_question}", user_question)
 
-        try:
-            response = self.llm_model.generate_content(prompt)
-            raw_text = self._safe_get_text(response)
+        raw_text = self.generate_with_fallback(prompt)
+        if raw_text and raw_text.strip():
+            return re.sub(r'^[“"]|[”"]$', '', raw_text.strip()).strip()
 
-            if not raw_text.strip():
-                print(f"⚠️ [Rewrite Query] AI trả về rỗng, dùng câu hỏi gốc.")
-                return user_question
+        logger.error("Rewrite Query: toàn bộ model dự phòng thất bại hoặc trả về rỗng, thử lại không kèm lịch sử.")
 
-            clean_text = re.sub(r'^[“"]|[”"]$', '', raw_text.strip()).strip()
-            return clean_text
+        fallback_prompt = self.prompt_rewrite_query.replace("{history_text}", "Không có lịch sử trò chuyện do lỗi hệ thống.").replace("{user_question}", user_question)
+        fallback_text = self.generate_with_fallback(fallback_prompt)
+        if fallback_text and fallback_text.strip():
+            return re.sub(r'^[“"]|[”"]$', '', fallback_text.strip()).strip()
 
-        except Exception as e:
-            logger.error("Lỗi khi Rewrite Query lần 1: %s", e)
-
-            fallback_prompt = self.prompt_rewrite_query.replace("{history_text}", "Không có lịch sử trò chuyện do lỗi hệ thống.").replace("{user_question}", user_question)
-
-            try:
-                fallback_response = self.llm_model.generate_content(fallback_prompt)
-                raw_fallback_text = self._safe_get_text(fallback_response)
-
-                if not raw_fallback_text.strip():
-                    return user_question
-
-                fallback_clean_text = re.sub(r'^[“"]|[”"]$', '', raw_fallback_text.strip()).strip()
-                return fallback_clean_text
-            except Exception as e_fallback:
-                logger.error("Lỗi tại vòng Fallback của Rewrite Query: %s", e_fallback)
-                return user_question
+        return user_question
 
     def extract_dynamic_aspects(self, user_question):
         prompt = self.prompt_extract_dynamic_aspects.replace("{user_question}", user_question)
 
         try:
-            response = self.llm_model.generate_content(prompt)
-            text = response.text.strip()
-            text = re.sub(r'^```json|```$', '', text, flags=re.MULTILINE).strip()
+            raw_text = self.generate_with_fallback(prompt)
+            if not raw_text:
+                raise ValueError("Tất cả model dự phòng đều thất bại hoặc trả về rỗng.")
+            text = re.sub(r'^```json|```$', '', raw_text.strip(), flags=re.MULTILINE).strip()
             data = json.loads(text)
 
             required_keys = [
@@ -184,39 +210,22 @@ class GraphRAG_Bot:
         has_yielded = False
 
         try:
-            response = self.llm_model.generate_content(gemini_messages, stream=True)
-            for chunk in response:
-                try:
-                    if chunk.candidates and chunk.candidates[0].content.parts:
-                        text_data = chunk.text
-                        if text_data:
-                            print(text_data, end="", flush=True)
-                            yield text_data
-                            has_yielded = True
-                except ValueError:
-                    pass
-
+            for text_data in self._stream_with_fallback(gemini_messages):
+                print(text_data, end="", flush=True)
+                yield text_data
+                has_yielded = True
         except Exception as e:
-            if not has_yielded and len(history) >= 1:
+            logger.error("Lỗi Stream Khởi tạo: %s", e)
 
-                gemini_messages_fallback = [{"role": "user", "parts": [prompt_result]}]
-
-                try:
-                    response_fallback = self.llm_model.generate_content(gemini_messages_fallback, stream=True)
-                    for chunk in response_fallback:
-                        try:
-                            if chunk.candidates and chunk.candidates[0].content.parts:
-                                text_data = chunk.text
-                                if text_data:
-                                    print(text_data, end="", flush=True)
-                                    yield text_data
-                                    has_yielded = True
-                        except ValueError:
-                            pass
-                except Exception as e_fallback:
-                    logger.error("Lỗi Stream Fallback: %s", e_fallback)
-            else:
-                logger.error("Lỗi Stream Khởi tạo: %s", e)
+        if not has_yielded and len(history) >= 1:
+            gemini_messages_fallback = [{"role": "user", "parts": [prompt_result]}]
+            try:
+                for text_data in self._stream_with_fallback(gemini_messages_fallback):
+                    print(text_data, end="", flush=True)
+                    yield text_data
+                    has_yielded = True
+            except Exception as e_fallback:
+                logger.error("Lỗi Stream Fallback: %s", e_fallback)
 
         if not has_yielded:
             yield "Xin lỗi, tôi không thể trả lời câu hỏi này do giới hạn an toàn hoặc quá tải hệ thống. Bạn có thể diễn đạt lại ngắn gọn hơn được không?"
@@ -277,33 +286,19 @@ class GraphRAG_Bot:
 
         has_yielded = False
         try:
-            response = self.llm_model.generate_content(gemini_messages, stream=True)
-            for chunk in response:
-                try:
-                    if chunk.candidates and chunk.candidates[0].content.parts:
-                        text_data = chunk.text
-                        if text_data:
-                            yield {"type": "token", "data": text_data}
-                            has_yielded = True
-                except ValueError:
-                    pass
+            for text_data in self._stream_with_fallback(gemini_messages):
+                yield {"type": "token", "data": text_data}
+                has_yielded = True
         except Exception as e:
-            if not has_yielded and len(history) >= 1:
-                try:
-                    fb = self.llm_model.generate_content([{"role": "user", "parts": [prompt_result]}], stream=True)
-                    for chunk in fb:
-                        try:
-                            if chunk.candidates and chunk.candidates[0].content.parts:
-                                text_data = chunk.text
-                                if text_data:
-                                    yield {"type": "token", "data": text_data}
-                                    has_yielded = True
-                        except ValueError:
-                            pass
-                except Exception as e_fb:
-                    logger.error("Loi Stream Fallback: %s", e_fb)
-            else:
-                logger.error("Loi Stream Khoi tao: %s", e)
+            logger.error("Loi Stream Khoi tao: %s", e)
+
+        if not has_yielded and len(history) >= 1:
+            try:
+                for text_data in self._stream_with_fallback([{"role": "user", "parts": [prompt_result]}]):
+                    yield {"type": "token", "data": text_data}
+                    has_yielded = True
+            except Exception as e_fb:
+                logger.error("Loi Stream Fallback: %s", e_fb)
 
         if not has_yielded:
             yield {"type": "token", "data": "Xin loi, toi khong the tra loi cau hoi nay. Ban co the dien dat lai khong?"}

@@ -25,6 +25,15 @@ models:
   ingestion_rate_limit:
     min_interval_seconds: 30
     max_calls_per_minute: 2
+  # Same fallback model chain (models.ingestion_fallback) is reused for the live
+  # chat path, but with much lighter throttling - ingestion's 30s pacing is fine
+  # for a background batch job, not for an interactive request the user is
+  # waiting on. This only paces repeat calls to the *same* model; it does not
+  # by itself prevent a daily quota (like the free-tier 20/day cap) from being
+  # hit - that's what the fallback chain is for.
+  chat_rate_limit:
+    min_interval_seconds: 2
+    max_calls_per_minute: 8
   embedding: "AITeamVN/Vietnamese_Embedding"
 
 generation_config:

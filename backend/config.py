@@ -27,6 +27,9 @@ MODEL_INGESTION_FALLBACK = config_data["models"].get("ingestion_fallback") or [M
 _ingestion_rate_limit = config_data["models"].get("ingestion_rate_limit", {})
 INGESTION_MIN_INTERVAL_SECONDS = _ingestion_rate_limit.get("min_interval_seconds", 4)
 INGESTION_MAX_CALLS_PER_MINUTE = _ingestion_rate_limit.get("max_calls_per_minute", 10)
+_chat_rate_limit = config_data["models"].get("chat_rate_limit", {})
+CHAT_MIN_INTERVAL_SECONDS = _chat_rate_limit.get("min_interval_seconds", 2)
+CHAT_MAX_CALLS_PER_MINUTE = _chat_rate_limit.get("max_calls_per_minute", 8)
 MODEL_EMBEDDING = config_data["models"]["embedding"]
 GENERATION_CONFIG = config_data["generation_config"]
 
