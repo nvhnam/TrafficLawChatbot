@@ -136,7 +136,7 @@ def process_folder_and_build():
 
         _progress.update(is_running=False, phase="completed", message="Hoan tat 100%!")
         return jsonify(_resp({
-            "message": "Hoan tat toan bo chu trinh (khong bao gom GraphSAGE - click Train rieng)!",
+            "message": "Hoan tat toan bo chu trinh!",
             "total_success": len(processed_jsons),
             "total_errors": len(errors),
             "errors_detail": errors,
@@ -164,51 +164,3 @@ def build_graph():
         return jsonify(_resp(f"Da upload {len(json_files)} file JSON va xay dung Do thi thanh cong!"))
     except Exception as e:
         return jsonify(_resp("", "5", f"Loi he thong: {str(e)}"))
-
-
-@bp.route("/api/train_graphsage", methods=["POST"])
-@cross_origin()
-def train_graphsage():
-    try:
-        driver = _get_uploader().driver
-        with driver.session(database="neo4j") as session:
-            session.run("CALL gds.graph.drop('traffic_graph', false) YIELD graphName;")
-            session.run("""
-                CALL gds.graph.project(
-                  'traffic_graph',
-                  ['Document', 'Article', 'Clause', 'Point', 'Chunk', 'VIOLATION', 'SUBJECT'],
-                  {
-                    HAS_ARTICLE: {orientation: 'UNDIRECTED'},
-                    HAS_CLAUSE: {orientation: 'UNDIRECTED'},
-                    HAS_POINT: {orientation: 'UNDIRECTED'},
-                    HAS_CHUNK: {orientation: 'UNDIRECTED'},
-                    MENTIONED_IN: {orientation: 'UNDIRECTED'}
-                  },
-                  { nodeProperties: 'embedding' }
-                )
-            """)
-            session.run("""
-                CALL gds.beta.graphSage.train(
-                  'traffic_graph',
-                  {
-                    modelName: 'legal_sage_model',
-                    featureProperties: ['embedding'],
-                    embeddingDimension: 1024,
-                    epochs: 10,
-                    sampleSizes: [25, 10]
-                  }
-                )
-            """)
-            result = session.run("""
-                CALL gds.beta.graphSage.write(
-                  'traffic_graph',
-                  { modelName: 'legal_sage_model', writeProperty: 'structural_embedding' }
-                )
-            """).single()
-            nodes_updated = result.get("nodePropertiesWritten", 0) if result else 0
-            session.run("CALL gds.graph.drop('traffic_graph', false) YIELD graphName;")
-            session.run("CALL gds.beta.model.drop('legal_sage_model') YIELD modelInfo;")
-
-        return jsonify(_resp({"message": "Huan luyen GraphSAGE hoan tat!", "nodes_updated": nodes_updated}))
-    except Exception as e:
-        return jsonify(_resp({}, "500", f"Loi qua trinh huan luyen: {str(e)}"))

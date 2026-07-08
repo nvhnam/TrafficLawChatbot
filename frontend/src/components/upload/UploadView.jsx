@@ -1,9 +1,9 @@
 import { useState, useCallback } from 'react'
-import { uploadFiles, trainGraphSAGE } from '../../lib/api'
+import { uploadFiles } from '../../lib/api'
 import DropZone from './DropZone'
 import FileList from './FileList'
 import ProgressTracker from './ProgressTracker'
-import { Cpu, AlertCircle, CheckCircle } from '../icons'
+import { AlertCircle, CheckCircle } from '../icons'
 
 export default function UploadView() {
   const [files, setFiles] = useState([])
@@ -11,7 +11,6 @@ export default function UploadView() {
   const [tracking, setTracking] = useState(false)
   const [done, setDone] = useState(false)
   const [error, setError] = useState(null)
-  const [trainStatus, setTrainStatus] = useState(null)
 
   function addFiles(incoming) {
     setFiles(prev => {
@@ -52,16 +51,6 @@ export default function UploadView() {
     setFiles([])
   }, [])
 
-  async function trainGraph() {
-    setTrainStatus('loading')
-    try {
-      const res = await trainGraphSAGE()
-      setTrainStatus(res.status === 'error' ? 'error' : 'done')
-    } catch {
-      setTrainStatus('error')
-    }
-  }
-
   return (
     <div className="h-full overflow-y-auto px-6 py-6 max-w-2xl mx-auto w-full">
       <h2 className="text-base font-semibold mb-5" style={{ color: 'var(--text)' }}>
@@ -100,44 +89,6 @@ export default function UploadView() {
           Nhúng {files.length} tệp vào đồ thị
         </button>
       )}
-
-      {/* GraphSAGE opt-in section */}
-      <div
-        className="mt-8 pt-6"
-        style={{ borderTop: '1px solid var(--border)' }}
-      >
-        <div className="flex items-start gap-3">
-          <div
-            className="p-2 rounded-lg shrink-0"
-            style={{ background: 'var(--surface2)', color: 'var(--muted)' }}
-          >
-            <Cpu size={16} />
-          </div>
-          <div className="flex-1">
-            <p className="text-sm font-medium" style={{ color: 'var(--text)' }}>
-              Huấn luyện mô hình đồ thị (GraphSAGE)
-            </p>
-            <p className="text-xs mt-0.5 mb-3" style={{ color: 'var(--muted)' }}>
-              Tùy chọn. Cải thiện độ chính xác truy vấn bằng cách học nhúng cấu trúc đồ thị. Tốn nhiều tài nguyên.
-            </p>
-            <button
-              className="px-4 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer"
-              style={{
-                background: trainStatus === 'loading' ? 'var(--border)' : 'var(--surface2)',
-                color: trainStatus === 'done' ? '#34d399' : trainStatus === 'error' ? '#f87171' : 'var(--text)',
-                border: '1px solid var(--border)',
-              }}
-              onClick={trainGraph}
-              disabled={trainStatus === 'loading'}
-            >
-              {trainStatus === 'loading' && 'Đang huấn luyện...'}
-              {trainStatus === 'done' && 'Hoàn tất!'}
-              {trainStatus === 'error' && 'Thử lại'}
-              {!trainStatus && 'Huấn luyện mô hình đồ thị'}
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }

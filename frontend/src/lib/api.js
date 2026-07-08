@@ -64,8 +64,3 @@ export async function uploadFiles(formData) {
   })
   return res.json()
 }
-
-export async function trainGraphSAGE() {
-  const res = await fetch('/api/train_graphsage', { method: 'POST' })
-  return res.json()
-}

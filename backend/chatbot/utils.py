@@ -141,12 +141,12 @@ cypher_query_criminal = """
         """
 cypher_query = """
 // ==========================================
-// 1. HYBRID SEARCH + SAGE EXPANSION (TỐC ĐỘ CỦA QUERY 2)
+// 1. HYBRID SEARCH (TỐC ĐỘ CỦA QUERY 2)
 // ==========================================
 MATCH (v_chunk)
 SEARCH v_chunk IN (VECTOR INDEX chunk_vector_index FOR $question_vector LIMIT 8) SCORE AS v_score
 
-CALL db.index.fulltext.queryNodes("chunk_content_index", $safe_text) 
+CALL db.index.fulltext.queryNodes("chunk_content_index", $safe_text)
 YIELD node AS f_chunk, score AS f_score
 LIMIT 10
 
@@ -156,14 +156,7 @@ WITH res.node AS anchor, max(res.score) AS hybrid_score
 ORDER BY hybrid_score DESC
 LIMIT 10
 
-WITH collect({node: anchor, score: hybrid_score}) AS anchors
-UNWIND anchors[0..5] AS anchor_item
-
-MATCH (neighbor)
-SEARCH neighbor IN (VECTOR INDEX sage_chunk_index FOR anchor_item.node.sage_embedding LIMIT 3) SCORE AS sage_score
-
-WITH anchors, collect({node: neighbor, score: sage_score}) AS sage_results
-WITH anchors + sage_results AS pool
+WITH collect({node: anchor, score: hybrid_score}) AS pool
 
 UNWIND pool AS res
 WITH res.node AS chunk, max(res.score) AS top_score

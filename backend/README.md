@@ -308,12 +308,6 @@ Cấu hình mỗi index: `vector.dimensions = 1024`, `vector.similarity_function
 
 > **Lưu ý quan trọng — không phải mọi nhãn thực thể đều tìm được bằng vector.** Các nhãn `MONEY_AMOUNT, PENALTY_MEASURE, POINT_DEDUCTION, OBJECT_EQUIPMENT, DOCUMENT_RECORD, PHYSICAL_DOCUMENT, TIME_DURATION, PERCENTAGE, TEXT_SEGMENT, DEFINITION, RIGHT_OBLIGATION, PROCEDURE_ACTION, STANDARD_CONDITION` **không** nằm trong `NodeEmbeddingBuilder.schema` nên **không có embedding riêng và không có vector index**. Các node này chỉ được truy xuất gián tiếp thông qua **truy vết quan hệ đồ thị** (`MENTIONED_IN`, `HAS_MONEY_AMOUNT`, `HAS_PENALTY`...) xuất phát từ một `Chunk`/`VIOLATION`/`SUBJECT` đã được tìm thấy bằng vector/full-text search trước đó — đây chính là điểm khác biệt cốt lõi giữa **Graph-RAG** và **Vector-RAG thuần tuý**: không phải mọi thông tin cần tìm bằng vector, mà nhiều thông tin được "kéo theo" qua cạnh đồ thị.
 
-### GraphSAGE (mở rộng ngữ nghĩa theo cấu trúc đồ thị) — tính năng tuỳ chọn, **cần lưu ý**
-
-Endpoint `POST /api/train_graphsage` (`api/blueprints/ingest.py`) dùng Neo4j GDS (Graph Data Science) để huấn luyện mô hình `GraphSAGE` trên đồ thị `Chunk`/`VIOLATION`/`SUBJECT` (đầu vào là `embedding` đã có), kết quả ghi vào property **`structural_embedding`**.
-
-Tuy nhiên, câu truy vấn thời gian thực (`chatbot/utils.py::cypher_query`) lại tham chiếu tới `VECTOR INDEX sage_chunk_index` và property **`sage_embedding`** — **hai tên khác với những gì bước huấn luyện thực sự ghi ra** (`structural_embedding`), và **không có đoạn code nào trong repo tạo index `sage_chunk_index`**. Đây là điểm **chưa đồng bộ giữa phần huấn luyện và phần truy vấn** — tính năng mở rộng lân cận bằng GraphSAGE trong truy vấn hybrid nhiều khả năng **không hoạt động đúng như thiết kế** cho tới khi tên property/index được thống nhất (đổi `structural_embedding` → `sage_embedding` và tạo `sage_chunk_index`, hoặc sửa lại Cypher cho khớp). Truy vấn chính vẫn hoạt động bình thường nhờ nhánh `vector + full-text` không phụ thuộc vào phần SAGE này.
-
 ---
 
 ## 6. Từ mô hình khái niệm "ViolationRecord" sang Property Graph thực tế
@@ -388,9 +382,8 @@ Format này được ép buộc trực tiếp trong prompt hệ thống (`chatbo
 1. **Viết lại câu hỏi (`rewrite_query`)** — Gemini chuẩn hoá câu hỏi tự nhiên (có xét lịch sử hội thoại để suy luận ngữ cảnh bị lược, vd "nó", "thế còn") thành từ khoá pháp lý chuẩn.
 2. **Phân loại hình sự (`is_criminal_case`)** — heuristic từ khoá (chết người, tử vong, hình sự...) để quyết định có truy vấn thêm nhánh Bộ luật Hình sự (`cypher_query_criminal`) hay không.
 3. **Sinh vector câu hỏi** — cùng model embedding (`AITeamVN/Vietnamese_Embedding`) dùng lúc ingest, đảm bảo cùng không gian vector.
-4. **Hybrid Search + SAGE Expansion** (`cypher_query`, xem mục 5 về giới hạn của phần SAGE):
+4. **Hybrid Search** (`cypher_query`):
    - Top-8 theo **vector similarity** trên `chunk_vector_index` + Top-10 theo **full-text (Lucene)** trên `chunk_content_index` → gộp, khử trùng, lấy Top-10.
-   - (Dự kiến) mở rộng thêm Top-3 "hàng xóm" theo cấu trúc đồ thị qua `sage_chunk_index` cho mỗi anchor.
 5. **Boosting điểm số theo lĩnh vực pháp lý** — nhân hệ số ưu tiên nếu chunk thuộc văn bản Hình sự (×1.5) hoặc Dân sự/bồi thường (×1.4) hoặc có "phạt tù"/"phạm tội" (×1.3).
 6. **Lọc theo văn bản mới nhất** — nếu cùng một hành vi được quy định ở nhiều phiên bản Nghị định, chỉ giữ `doc.year = max(năm)`.
 7. **Cảnh báo sửa đổi/bãi bỏ** — kiểm tra quan hệ `AMENDS`/`REPEALS` từ `DOCUMENT_RECORD` để chèn cảnh báo "quy định đã bị sửa đổi/bãi bỏ" nếu có.
@@ -431,4 +424,4 @@ ingestion:
 | `URI` | Địa chỉ kết nối Neo4j, vd `bolt://localhost:7687` |
 | `USER_NEO4J`, `PASSWORD_NEO4J` | Thông tin đăng nhập Neo4j |
 
-Yêu cầu hạ tầng để chạy được toàn bộ pipeline: **Neo4j** (bật Graph Data Science plugin nếu muốn dùng `/api/train_graphsage`), trọng số OCR cục bộ trong thư mục `weight/` (không nằm trong Git, cần tải/copy riêng), Python venv với các thư viện trong `requirements.txt` (Docling, torch, sentence-transformers, neo4j-driver, google-generativeai/google-genai...).
+Yêu cầu hạ tầng để chạy được toàn bộ pipeline: **Neo4j**, trọng số OCR cục bộ trong thư mục `weight/` (không nằm trong Git, cần tải/copy riêng), Python venv với các thư viện trong `requirements.txt` (Docling, torch, sentence-transformers, neo4j-driver, google-generativeai/google-genai...).

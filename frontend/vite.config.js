@@ -13,7 +13,6 @@ const PROXY_ROUTES = [
   '/delete_document',
   '/ocr_text',
   '/build_graph',
-  '/api/train_graphsage',
 ]
 
 export default defineConfig({

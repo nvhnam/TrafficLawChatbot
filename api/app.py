@@ -237,21 +237,12 @@ def process_folder_and_build():
 
         post_processor_model.run_all()
 
-        progress_status["phase"] = "training_graphsage"
-        progress_status["message"] = "Đang huấn luyện AI GraphSAGE trên đồ thị. Vui lòng đợi thêm ít phút..."
-
-        train_response = train_graphsage()
-        train_data = train_response.get_json()
-
-        if train_data and train_data.get("errorCode") != "0":
-            raise Exception(f"Lỗi Train GraphSAGE: {train_data.get('errorMessage')}")
-
         progress_status["is_running"] = False
         progress_status["phase"] = "completed"
         progress_status["message"] = "Hoàn tất 100%!"
 
         return jsonify(create_response({
-            "message": f"Hoàn tất toàn bộ chu trình cho Folder (bao gồm Train GraphSAGE)!",
+            "message": f"Hoàn tất toàn bộ chu trình cho Folder!",
             "total_success": len(processed_jsons),
             "total_errors": len(errors),
             "errors_detail": errors
@@ -337,69 +328,6 @@ def build_graph():
         print(f"❌ Lỗi khi nạp dữ liệu và xây dựng Đồ thị: {str(e)}")
         return jsonify(create_response("", "5", f"Lỗi hệ thống: {str(e)}"))
 
-
-@app.route("/api/train_graphsage", methods=['POST'])
-@cross_origin()
-def train_graphsage():
-    try:
-        driver = uploader.driver
-
-        with driver.session(database="neo4j") as session:
-
-            session.run("CALL gds.graph.drop('traffic_graph', false) YIELD graphName;")
-
-            query_project = """
-            CALL gds.graph.project(
-              'traffic_graph',
-              ['Document', 'Article', 'Clause', 'Point', 'Chunk', 'VIOLATION', 'SUBJECT'],
-              {
-                HAS_ARTICLE: {orientation: 'UNDIRECTED'},
-                HAS_CLAUSE: {orientation: 'UNDIRECTED'},
-                HAS_POINT: {orientation: 'UNDIRECTED'},
-                HAS_CHUNK: {orientation: 'UNDIRECTED'},
-                MENTIONED_IN: {orientation: 'UNDIRECTED'}
-              },
-              { nodeProperties: 'embedding' }
-            )
-            """
-            session.run(query_project)
-
-            query_train = """
-            CALL gds.beta.graphSage.train(
-              'traffic_graph',
-              {
-                modelName: 'legal_sage_model',
-                featureProperties: ['embedding'],
-                embeddingDimension: 1024,
-                epochs: 10,
-                sampleSizes: [25, 10]
-              }
-            )
-            """
-            session.run(query_train)
-
-            query_write = """
-            CALL gds.beta.graphSage.write(
-              'traffic_graph',
-              {
-                modelName: 'legal_sage_model',
-                writeProperty: 'structural_embedding'
-              }
-            )
-            """
-            result_write = session.run(query_write).single()
-            node_properties_written = result_write.get("nodePropertiesWritten", 0)
-
-            session.run("CALL gds.graph.drop('traffic_graph', false) YIELD graphName;")
-            session.run("CALL gds.beta.model.drop('legal_sage_model') YIELD modelInfo;")
-
-        return jsonify(create_response({
-            "message": "Huấn luyện GraphSAGE và sinh Vector cấu trúc hoàn tất!",
-            "nodes_updated": node_properties_written
-        }, "0", "Thành công"))
-
-    except Exception as e:
-        return jsonify(create_response({}, "500", f"Lỗi quá trình huấn luyện: {str(e)}"))
 
 @app.route("/chat_stream", methods=['POST'])
 @cross_origin()
