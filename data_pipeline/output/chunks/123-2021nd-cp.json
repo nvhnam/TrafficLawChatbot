@@ -10,7 +10,7 @@
       "khoan": null,
       "diem": null,
       "type": "PREAMBLE",
-      "chunk_uuid": "ac62a789d3154c83ba51ace93cb02e91"
+      "chunk_uuid": "f58ab5217f694ed080b8a50705415752"
     }
   },
   {
@@ -24,7 +24,7 @@
       "khoan": null,
       "diem": null,
       "type": "ARTICLE_HEADER",
-      "chunk_uuid": "cb5ba90ec4994781bb563700f60ddc1b"
+      "chunk_uuid": "2a145ad4d1e64ffcbabf75cc16f338b0"
     }
   },
   {
@@ -38,7 +38,7 @@
       "khoan": "2b",
       "diem": null,
       "type": "CLAUSE_HEADER",
-      "chunk_uuid": "df1619572ffc40db863f638002f090f2"
+      "chunk_uuid": "307aa0660c7040bf87b98e2deefcc816"
     }
   },
   {
@@ -52,7 +52,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "5e557a3a96744f2595d9b1af84c93cc7"
+      "chunk_uuid": "00286ccc398a4721b84d2e4ca921beee"
     }
   },
   {
@@ -66,7 +66,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "acc7e11f4dcc454fa9306e1639ee8621"
+      "chunk_uuid": "932be98a79ee48da8b0067f420e85040"
     }
   },
   {
@@ -80,7 +80,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "55af417b54fb4d6788d290ee1ed26505"
+      "chunk_uuid": "9eb37f02e91b4e6497d6151c659bc0b5"
     }
   },
   {
@@ -94,7 +94,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "9fead0a1d87e480b8a014eb8d263a195"
+      "chunk_uuid": "0040500f121d4765b67dc8eb9aae228f"
     }
   },
   {
@@ -108,7 +108,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "18ee9291c9e746dc9af316587f114503"
+      "chunk_uuid": "00f4879d8dcf40138a787b06b8695891"
     }
   },
   {
@@ -122,7 +122,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "fbc3aea29a414c91baa1c434cb579092"
+      "chunk_uuid": "c037da6e7445483fbc1402994b92cf37"
     }
   },
   {
@@ -136,7 +136,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "5b6ae0ff8a2e44038df9311d87389529"
+      "chunk_uuid": "e613d9d1ed5f44df90469a5d72751321"
     }
   },
   {
@@ -150,7 +150,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a5a0ef65719940829d217ef4fdd65078"
+      "chunk_uuid": "c3cbeb79dc844c76aef39c832caa831f"
     }
   },
   {
@@ -164,7 +164,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "dce4097f4dfb4f3784537c2cc190fa5e"
+      "chunk_uuid": "58f6ff3184af49219aebb986e7f02c0f"
     }
   },
   {
@@ -178,7 +178,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "4e64f1f471c242c3aa7b1ce3a15c6d4c"
+      "chunk_uuid": "da9811b7e68c4724a99aee45a8427848"
     }
   },
   {
@@ -192,7 +192,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "69575b875f7c4a048a92c1b5e5831af5"
+      "chunk_uuid": "74e5112084544a69acea138ca5919511"
     }
   },
   {
@@ -206,7 +206,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "dae121b567514a16ada2d6590f86f8c2"
+      "chunk_uuid": "f81dc3e05dea45cb9a617ee314d32005"
     }
   },
   {
@@ -220,7 +220,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "dc5ae5b1a32f4e1493da5bfea0cabc0c"
+      "chunk_uuid": "f8dc3c9e99fc4ee88258e3f3c3a86faf"
     }
   },
   {
@@ -234,7 +234,7 @@
       "khoan": "2b",
       "diem": "e",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "65f6b0104cae4f718692593deebb9258"
+      "chunk_uuid": "2f8b3741f74a487ea533baefc60f8ac0"
     }
   },
   {
@@ -248,7 +248,7 @@
       "khoan": "2b",
       "diem": "g",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "6a488bfd2807423da33251b1f9d4a08f"
+      "chunk_uuid": "198bb650cee040c5a7e8538f11e7bc75"
     }
   },
   {
@@ -262,7 +262,7 @@
       "khoan": "2b",
       "diem": "h",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "01cb7bbff50747d59b14a8c71d42e33c"
+      "chunk_uuid": "bd118bdb9b8f45068bffa9c75131baeb"
     }
   },
   {
@@ -276,7 +276,7 @@
       "khoan": "2b",
       "diem": "i",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ce2c473d85d94db7bb33511b1f9e2aad"
+      "chunk_uuid": "f07293b3b1e04c52896ea3c05523322a"
     }
   },
   {
@@ -290,7 +290,7 @@
       "khoan": "2b",
       "diem": "k",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "d86bc004d86741d0be046328874cc6e9"
+      "chunk_uuid": "f1035b4b88124d2e8cd55a01d21496eb"
     }
   },
   {
@@ -304,7 +304,7 @@
       "khoan": "2b",
       "diem": "l",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "dbac9870b60649f682e17853fbd5f7c8"
+      "chunk_uuid": "b8f98f14297246d685982eaade91ac6e"
     }
   },
   {
@@ -318,7 +318,7 @@
       "khoan": "2b",
       "diem": "m",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "47e5d5487f3449fe873d955aaf46b7cc"
+      "chunk_uuid": "a3419e62f2a144ecbbb7054705381423"
     }
   },
   {
@@ -332,7 +332,7 @@
       "khoan": "2b",
       "diem": "n",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "c42040ebac6c488985d6d05c80c7d560"
+      "chunk_uuid": "b874b3a1b997474ca62a8065a7ac4c0b"
     }
   },
   {
@@ -346,7 +346,7 @@
       "khoan": "2b",
       "diem": "o",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "64b084e9ae72435fab075be686fb05f0"
+      "chunk_uuid": "a122dcb87092442aa2bf43b7cc723dd5"
     }
   },
   {
@@ -360,7 +360,7 @@
       "khoan": "2b",
       "diem": "p",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "3618b2ec37754087ad40e7ec0ab5d51b"
+      "chunk_uuid": "050e68d6601d43da894896832447db60"
     }
   },
   {
@@ -374,7 +374,7 @@
       "khoan": "2b",
       "diem": "q",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "139745988f0a48afac024eb86964d65c"
+      "chunk_uuid": "21f565737c1f4703a2989e31dee222ce"
     }
   },
   {
@@ -388,7 +388,7 @@
       "khoan": "2b",
       "diem": "r",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "eb457a29aaf841b992500ac340d45308"
+      "chunk_uuid": "b0f101fbed9b4d988833e4e0fcd75a44"
     }
   },
   {
@@ -402,7 +402,7 @@
       "khoan": "2b",
       "diem": "s",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "8680d5ba60924dceb5e55d946b0e2a04"
+      "chunk_uuid": "7316b4a07f434ee5b14b70020b6ba6c6"
     }
   },
   {
@@ -416,7 +416,7 @@
       "khoan": "2b",
       "diem": "t",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "5860c00939304aeeb04c3cc2020046ed"
+      "chunk_uuid": "53ee3dde1381400f8b7e12cfb5afa1f9"
     }
   },
   {
@@ -430,7 +430,7 @@
       "khoan": "2b",
       "diem": "u",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "075362bac33e434d97cc2e57ed32456f"
+      "chunk_uuid": "610dfc7746b444069cee8b5b51fbd42e"
     }
   },
   {
@@ -444,7 +444,7 @@
       "khoan": "2b",
       "diem": "v",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a5e0ef2b7f1f430b9fd3762c85e20109"
+      "chunk_uuid": "b1c50d2997b04a5d87f8da26852e8fc8"
     }
   },
   {
@@ -458,7 +458,7 @@
       "khoan": "2b",
       "diem": "x",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "61f0d1b709de402790c2c5c4cf47213c"
+      "chunk_uuid": "ba6b77fede3447138863ced9dd7d9401"
     }
   },
   {
@@ -472,7 +472,7 @@
       "khoan": "2b",
       "diem": "y",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "4894e7706e664b1e957d32d61d9ad1db"
+      "chunk_uuid": "278579b15fc94e6c8413348ba8e9b07c"
     }
   },
   {
@@ -486,7 +486,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "30456193ff3949a199b8a20423a2819e"
+      "chunk_uuid": "40210c239c5a4065b862f608fcc55ebd"
     }
   },
   {
@@ -500,7 +500,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "06d4797178ac47d9ae652c0c0f1f47c1"
+      "chunk_uuid": "71702fadc08c445db0219257a419c14f"
     }
   },
   {
@@ -514,7 +514,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "13c10672316842239087028edfd4ee27"
+      "chunk_uuid": "85e324fd0c654d738f26777bcdb0db2d"
     }
   },
   {
@@ -528,7 +528,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1e47c90e2c484a7d84920cf611edc2a4"
+      "chunk_uuid": "bf5f6fcfb1324e9b93beebdccec5a7b0"
     }
   },
   {
@@ -542,7 +542,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "4b02624c5f114c188d8fbfb2882df8de"
+      "chunk_uuid": "98069dfd75bc40bd957a27a23d8b2dd9"
     }
   },
   {
@@ -556,7 +556,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "3352a1d36be04203be4ccf37f14eaade"
+      "chunk_uuid": "043d2ab172c64c4b9fbf2ce5b8630d15"
     }
   },
   {
@@ -570,7 +570,7 @@
       "khoan": "2b",
       "diem": "k",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "6c2526c479a247c78436387408c11780"
+      "chunk_uuid": "42b316220d5345a29de8c0783c8e2223"
     }
   },
   {
@@ -584,7 +584,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "c4505a067e3c41e6b6e57ed70a7553bd"
+      "chunk_uuid": "7a1f5c675205402db0e9d79a397e3541"
     }
   },
   {
@@ -598,7 +598,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "88838a6254464ad38d183df99f184518"
+      "chunk_uuid": "7e3be8b18e97401cb802208cd6293a78"
     }
   },
   {
@@ -612,7 +612,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "37638a411d884bebb9f75fddd28865aa"
+      "chunk_uuid": "077d24d5fadf4046bbd007b05da0e3a3"
     }
   },
   {
@@ -626,7 +626,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "315b1bd4824b4982a416808e33953ed5"
+      "chunk_uuid": "4209dba60f944b34ac21c6027106a1bc"
     }
   },
   {
@@ -640,7 +640,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "af57e96ef6ef4c7788129721c6fe302b"
+      "chunk_uuid": "ecb5ca6ede4f4a81bb4ad6525283fbc0"
     }
   },
   {
@@ -654,7 +654,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "be1e5dd9671d41558260d30bc042ea89"
+      "chunk_uuid": "07b8818596f94b2dbed25a31efdb3545"
     }
   },
   {
@@ -668,7 +668,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "6af97f70404f4478aae46ea90afb5097"
+      "chunk_uuid": "90f5b464cda94ce799680d3da2108865"
     }
   },
   {
@@ -682,7 +682,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "6bec9a4f46574d6b838cb09d7a24689c"
+      "chunk_uuid": "85d48eecb992455f98450eefb36699ac"
     }
   },
   {
@@ -696,7 +696,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "d47890dde1544ed29cb0ed44d24fe79c"
+      "chunk_uuid": "e22db49704ec478b937f360d97aee0e5"
     }
   },
   {
@@ -710,7 +710,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "0b942874cbaa4b29bd992ebb981bcaf5"
+      "chunk_uuid": "f1574c40aa0b4a7c9b13c6e9fbe64c44"
     }
   },
   {
@@ -724,7 +724,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "7a1042828b7d480a8230ce99ac5236b0"
+      "chunk_uuid": "150994f5ec6a4762b83bae0cb17a87b9"
     }
   },
   {
@@ -738,7 +738,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "71ec3b6db82343a797654b8f34eac6a0"
+      "chunk_uuid": "b76533c667dc45d494db3a6040474a70"
     }
   },
   {
@@ -752,7 +752,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "7ecc4a55820c41e0a573cf9e843850c7"
+      "chunk_uuid": "e6b195df96c041c7ac231a94bfb3f9d5"
     }
   },
   {
@@ -766,7 +766,7 @@
       "khoan": "2b",
       "diem": "e",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1e110f66e78f4fe4bf1382b300bda78e"
+      "chunk_uuid": "23e533274ae5449e80481c0dbece5a95"
     }
   },
   {
@@ -780,7 +780,7 @@
       "khoan": "2b",
       "diem": "g",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ac3232a4dce84b7d98155917e2bd39cc"
+      "chunk_uuid": "389fa8514b59418789389733bee5b5a6"
     }
   },
   {
@@ -794,7 +794,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "835850b4ca26494a9831dc7433839a41"
+      "chunk_uuid": "a08075fab1ec45cd8354f00fdaa91247"
     }
   },
   {
@@ -808,7 +808,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1706ba7c82ac409897180527920d998e"
+      "chunk_uuid": "4e829aa232ce4f61918af36085c5bad6"
     }
   },
   {
@@ -822,7 +822,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "3ea78807bf414e39ae8bc95f82f411fc"
+      "chunk_uuid": "2eadd8ad0f4b4ce9ba2c2aa3b159405c"
     }
   },
   {
@@ -836,7 +836,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "aa8e7eaeef8344158a0947daa176bf37"
+      "chunk_uuid": "0463a0e2ca324cd695059b4385f74830"
     }
   },
   {
@@ -850,7 +850,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "75fc9390b6d04e27b34ac7f65c30f54b"
+      "chunk_uuid": "83bb1c16981f4caca55be1224e7323ab"
     }
   },
   {
@@ -864,7 +864,7 @@
       "khoan": "2b",
       "diem": "e",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a9cd5d3f066145dfb4764f74376b0787"
+      "chunk_uuid": "df427e411aab47bca305ace7adfa497f"
     }
   },
   {
@@ -878,7 +878,7 @@
       "khoan": "2b",
       "diem": "g",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "aed3625620d84e1da6661a44382c3998"
+      "chunk_uuid": "5c7e614cc8444318aaaee7f2470a790f"
     }
   },
   {
@@ -892,7 +892,7 @@
       "khoan": "2b",
       "diem": "h",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "c41623fdf5e64d18a19a83b93db537c4"
+      "chunk_uuid": "4ac150f396684bf08653fa4043830609"
     }
   },
   {
@@ -906,7 +906,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ed03432e66914dc0a6bc7165fdbd21a1"
+      "chunk_uuid": "252f5ed514a84af09a4e189d251cf0d5"
     }
   },
   {
@@ -920,7 +920,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ca4b62b64282498b8759f36340052fd3"
+      "chunk_uuid": "3e207e527336476c8c1fbaaae7c5bb68"
     }
   },
   {
@@ -934,7 +934,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "abb0d3bfcd9a47e39e19d1fdb5132ae4"
+      "chunk_uuid": "bbbbf33bad764c23bc9899954711e37a"
     }
   },
   {
@@ -948,7 +948,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a95393f2b5dd477cbddc8fd1956635b7"
+      "chunk_uuid": "c0925cb74dfe4d46876be3c538b6d4da"
     }
   },
   {
@@ -962,7 +962,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "deae294a113d4055a39a97c9765fccf2"
+      "chunk_uuid": "4f57eee7061f40bb8b3d19b74b6ed384"
     }
   },
   {
@@ -976,7 +976,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "338da439d919457c8c7489f099445a71"
+      "chunk_uuid": "27742e2a9d8244ef82a550926ea4635e"
     }
   },
   {
@@ -990,7 +990,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1409e1b4d51b48068b15ec379263be8d"
+      "chunk_uuid": "e9d8d7b77aa84e528ec8f4102926868e"
     }
   },
   {
@@ -1004,7 +1004,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "54c856f2dc7d4462a9481c7aae0efb80"
+      "chunk_uuid": "479662b994d34c359b56cfa422676fad"
     }
   },
   {
@@ -1018,7 +1018,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "fc7b57c3f0694f83a4a2a97e4107fb48"
+      "chunk_uuid": "84ff883c75d9491fb7df158823d2ed96"
     }
   },
   {
@@ -1032,7 +1032,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "8f0b2f323d944aa6b919fec63c052fdc"
+      "chunk_uuid": "7009c8a58b2c483c9ce0ce2f16de8166"
     }
   },
   {
@@ -1046,7 +1046,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1a8e2423bc8242939dc48d1a4bda6a4f"
+      "chunk_uuid": "a44ad147a265476ca9b890da3c005e69"
     }
   },
   {
@@ -1060,7 +1060,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "2ae1b58e5f42428d9955f9bdf6d4f559"
+      "chunk_uuid": "3b40f8fd613a4669a1808274de8292ad"
     }
   },
   {
@@ -1074,7 +1074,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "bdc0e4e956b4469095dded595eb9ca30"
+      "chunk_uuid": "db0a79910d8d4bfc9b2cd949aad4e983"
     }
   },
   {
@@ -1088,7 +1088,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "bb5c88ceb13d4d2ba1af035a7f9c61ed"
+      "chunk_uuid": "d0821c36734d49a3b8d7b9498b4ad5fa"
     }
   },
   {
@@ -1102,7 +1102,7 @@
       "khoan": "2b",
       "diem": "e",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "537fcca609244cefb3493f02903aeae6"
+      "chunk_uuid": "2800a32315f34ad0a5e29af39dca2a91"
     }
   },
   {
@@ -1116,7 +1116,7 @@
       "khoan": "2b",
       "diem": "g",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "22b142207a774aeda5ff6a4d885a6d66"
+      "chunk_uuid": "628cfe1661e84d59a3634e96092d6db2"
     }
   },
   {
@@ -1130,7 +1130,7 @@
       "khoan": "2b",
       "diem": "h",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "97d2f9ed5a934809b1a5cc52dd355863"
+      "chunk_uuid": "d9c20ee4168d49ef89669e89e3cfb629"
     }
   },
   {
@@ -1144,7 +1144,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "7c3927579dba4bf5bf08663e6d8f2e4d"
+      "chunk_uuid": "d0fabe186c07412f8aa08ba9dca32054"
     }
   },
   {
@@ -1158,7 +1158,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "07a049eb3e274c8d802b980e6b5f7676"
+      "chunk_uuid": "0846a6589db44e0e81141f45df1e2e79"
     }
   },
   {
@@ -1172,7 +1172,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "9327965f2cbd49c89e1c1d6ef8e79503"
+      "chunk_uuid": "41bdfde6997946a59bf2d0ee73ad6a72"
     }
   },
   {
@@ -1186,7 +1186,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1ad156cfa13f49609fc642b95b22e849"
+      "chunk_uuid": "f0ca0d8fd4714360908196deda1cac4c"
     }
   },
   {
@@ -1200,7 +1200,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ccc8171f49754fd786a26295b759b826"
+      "chunk_uuid": "a3f3560caac24d3bb547c71fc6b8422e"
     }
   },
   {
@@ -1214,7 +1214,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "0b3b5fd781fc4cdf89ed4383af6f4007"
+      "chunk_uuid": "968c0a524090469daa580983976bafa9"
     }
   },
   {
@@ -1228,7 +1228,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a1eb4eecc3dd4dc7a633f5b9c78a79ce"
+      "chunk_uuid": "b25a887a660c434fb8809f14e8999bc2"
     }
   },
   {
@@ -1242,7 +1242,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ab096cdb903948bfa299fa65258dfa70"
+      "chunk_uuid": "40ed5333bd0347a3ae93508b869e51b7"
     }
   },
   {
@@ -1256,7 +1256,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "9f60230f6072404c95dc27f8d428e9b0"
+      "chunk_uuid": "19c76b3f51154f009c98ad45120fcfcd"
     }
   },
   {
@@ -1270,7 +1270,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "434bd7ad72004d60af534908d057c754"
+      "chunk_uuid": "62bc9599e2614494b5b5e4dda4736c30"
     }
   },
   {
@@ -1284,7 +1284,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "89789fb316e049939df1f3a334bccd5f"
+      "chunk_uuid": "ba2acfdecac74661a85325478e0b8058"
     }
   },
   {
@@ -1298,7 +1298,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "4739ae4284d04e8588059a31e213b1bf"
+      "chunk_uuid": "1da0f0a66d384c019ae8607db0bb9ef5"
     }
   },
   {
@@ -1312,7 +1312,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "6d73b186ecb646c4a9deb5e56f8cff8e"
+      "chunk_uuid": "724be5d4382c4e8aa432541b2595fc5d"
     }
   },
   {
@@ -1326,7 +1326,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1c431cca59c2476fb6cd761d3c1d45b5"
+      "chunk_uuid": "fedf3181c70c46c9908fee45622d888e"
     }
   },
   {
@@ -1340,7 +1340,7 @@
       "khoan": "2b",
       "diem": "e",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "cd6a2e88956c4013a74ccde184177fac"
+      "chunk_uuid": "87d7ee61f90743b8926b849c91629979"
     }
   },
   {
@@ -1354,7 +1354,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "d69c803db6fc44c4a22a6899afa9283d"
+      "chunk_uuid": "3d85faef85434d58a9dcd2ff01131ecf"
     }
   },
   {
@@ -1368,7 +1368,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "d6b6de9d7b7b4583bab3468188311564"
+      "chunk_uuid": "7d7e418f2f5b4232aaa327dacdff9f8f"
     }
   },
   {
@@ -1382,7 +1382,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "71047994ad314beca5c5c46b8567fbc3"
+      "chunk_uuid": "b374236d59d64931bddd86ef1a08cf14"
     }
   },
   {
@@ -1396,7 +1396,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "c93748a0533f41929c2644e4564ebec4"
+      "chunk_uuid": "022362a9429e4dfc98fb04617818ad80"
     }
   },
   {
@@ -1410,7 +1410,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "0c3b614089f54cf4b0d09d00758e31de"
+      "chunk_uuid": "02f996b144d14fada2945bb97714b1a6"
     }
   },
   {
@@ -1424,7 +1424,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "17e1bb6a003c4984be63d4344891d2f2"
+      "chunk_uuid": "597c02981d0e4955a893d4183ea7f5e0"
     }
   },
   {
@@ -1438,7 +1438,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "d136840cc4374348bec51082adb9fa94"
+      "chunk_uuid": "5f37958b8dba46c4ad905b0a9c448425"
     }
   },
   {
@@ -1452,7 +1452,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ef69f4c4c3d2463bba7786ad403ef879"
+      "chunk_uuid": "3fb3ac438ffe4db098c1b7d478cca72c"
     }
   },
   {
@@ -1466,7 +1466,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a00296201ca64c40b1cf6d6537be11e7"
+      "chunk_uuid": "5434f1a29e64459c8ef6a0446cd6ae28"
     }
   },
   {
@@ -1480,7 +1480,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "fb1de6cd389d4d44bb308e20aeccce0a"
+      "chunk_uuid": "28a42658e6ea48d1817b5d22a1006fc3"
     }
   },
   {
@@ -1494,7 +1494,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "937d90a0e96b4370bdee3d86b1f7c30b"
+      "chunk_uuid": "b84d48ba97414ef9bb4c7e0291963eb4"
     }
   },
   {
@@ -1508,7 +1508,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "c782266282564f5a89cf563051375fee"
+      "chunk_uuid": "178e21cfdb2e4ffe890ac16aa00d8a36"
     }
   },
   {
@@ -1522,7 +1522,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "04ec601bdb9e4caeb5f10d3bf49c8c1c"
+      "chunk_uuid": "ec5425a069554ec9ad54f210d6f474ac"
     }
   },
   {
@@ -1536,7 +1536,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "b7626e67b3474875991005ca1c7f1db4"
+      "chunk_uuid": "b108c3143d224a0aad926823ced82aea"
     }
   },
   {
@@ -1550,7 +1550,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "b6a51cc9165a41e5bfce85e81cf9e702"
+      "chunk_uuid": "272568d8a7cc451182874dc9684009cd"
     }
   },
   {
@@ -1564,7 +1564,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "4bf9b041a81649b5845b291d0c84d14f"
+      "chunk_uuid": "5251e588d3044d9d98725807dc308631"
     }
   },
   {
@@ -1578,7 +1578,7 @@
       "khoan": "2b",
       "diem": "e",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "e720e64caec6452c8f2ef386b9731b12"
+      "chunk_uuid": "63f78e8d4104407f9fb3e6e2a9872305"
     }
   },
   {
@@ -1592,7 +1592,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "297297ef938d446ab900bcee701e69d0"
+      "chunk_uuid": "72bfc21423944723912a399adfc663fe"
     }
   },
   {
@@ -1606,7 +1606,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "baa652261d1d4688a4ac427d4206a0b8"
+      "chunk_uuid": "fd95374554fc4860a7c5c3d7e0bf49ce"
     }
   },
   {
@@ -1620,7 +1620,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "9304f8be8b1f42b9bff83c96dd886631"
+      "chunk_uuid": "07ed534cab7849cbb684b5bc76e89176"
     }
   },
   {
@@ -1634,7 +1634,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "13b92b12e13d4367b922b42298cb3348"
+      "chunk_uuid": "9aa1327e95a249d598e4a93cee1691c7"
     }
   },
   {
@@ -1648,7 +1648,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "f432f92b432b4edbbb87d207c32a435a"
+      "chunk_uuid": "04682669fb2d4256b49f8c723abb5818"
     }
   },
   {
@@ -1662,7 +1662,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1cb27e289b1443be96fde414c96e8aae"
+      "chunk_uuid": "0a5aa4073cff4114a290c346c3f63da5"
     }
   },
   {
@@ -1676,7 +1676,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a6deed58dabf4fc5945fde9acde02289"
+      "chunk_uuid": "4f303791708e4948a924bc9d4408a7a1"
     }
   },
   {
@@ -1690,7 +1690,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "d3d1a456bf22469b849263dec8e8c25b"
+      "chunk_uuid": "f781bd540c51410ba8523300d848a953"
     }
   },
   {
@@ -1704,7 +1704,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "aa087f97a2044a98bf795d96f7ff4a84"
+      "chunk_uuid": "bdc00ca1acf6462f8ac4bb4e4415f670"
     }
   },
   {
@@ -1718,7 +1718,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "f605bf6dffe440bc8bdecf6d94aafeba"
+      "chunk_uuid": "329c5c16af794497bf351612c9260a80"
     }
   },
   {
@@ -1732,7 +1732,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "9959a675073b4a9abb5d99fd7e3f2f0f"
+      "chunk_uuid": "31c5caa9573b4135b8b6f50319d6a702"
     }
   },
   {
@@ -1746,7 +1746,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1f2b9cb3c35246b09aa96e393668c0a0"
+      "chunk_uuid": "d1cd61c28e8040bca116ec3969c47880"
     }
   },
   {
@@ -1760,7 +1760,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "114556987c7d497795d77ad2454b9a3b"
+      "chunk_uuid": "3da3f47d856a4961b408fcc8181e0676"
     }
   },
   {
@@ -1774,7 +1774,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1c3294091f694566b851481e0a342122"
+      "chunk_uuid": "a0bb3407bdfb42bb98da4d1b0cf9511b"
     }
   },
   {
@@ -1788,7 +1788,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "099a5d5a8eb24e77b9c890b32521732a"
+      "chunk_uuid": "da389164ef084058b221b3e85eb10baf"
     }
   },
   {
@@ -1802,7 +1802,7 @@
       "khoan": "2b",
       "diem": "e",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1010a96b37664b569ad1a62f35986c7e"
+      "chunk_uuid": "40c019d9cd204e069c1db481ae90323f"
     }
   },
   {
@@ -1816,7 +1816,7 @@
       "khoan": "2b",
       "diem": "g",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "8c9d4a76751449109dadcc278edb9315"
+      "chunk_uuid": "7f61c372bd11409c9ac01393fb91ddad"
     }
   },
   {
@@ -1830,7 +1830,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1cc47180b04e483b84a8c2ef33ac9361"
+      "chunk_uuid": "e70175210f574eb3aaf364e3809824c0"
     }
   },
   {
@@ -1844,7 +1844,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "48076edcb56c46c59ea0c9e235e21ef1"
+      "chunk_uuid": "7508cf0ed96942deaa37411ce1c9b49d"
     }
   },
   {
@@ -1858,7 +1858,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "5e79af9aae9f45c1a329fe8dd7650a27"
+      "chunk_uuid": "7a9937e8585d466fad70a0dfa7bfc39d"
     }
   },
   {
@@ -1872,7 +1872,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "f0082cb6645e4f1c85d3bb3ac0496b8d"
+      "chunk_uuid": "8804769edb84411787290d0d6801d68f"
     }
   },
   {
@@ -1886,7 +1886,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "006299cebd7d4522b1fb199d80c0c9cf"
+      "chunk_uuid": "dd544a958b7546a8a5e58ac7bf6caf79"
     }
   },
   {
@@ -1900,7 +1900,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "5faf3e187eed459084100902e08c044b"
+      "chunk_uuid": "bd0ca16e7f5b44f29761ceaed3470eeb"
     }
   },
   {
@@ -1914,7 +1914,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "81cbb9e975d046c8a1a6ff0097ae69ef"
+      "chunk_uuid": "17106d9dc2fe44eaaf46dfe22b267342"
     }
   },
   {
@@ -1928,7 +1928,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "9a633f2ddaf14630a4c53326da00f1f2"
+      "chunk_uuid": "97ee068692904c40a88cfccac680f9b6"
     }
   },
   {
@@ -1942,7 +1942,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "264993d909244daa83e4a3aef4ce1b9e"
+      "chunk_uuid": "2245efc500454d37b535a41c352f88d8"
     }
   },
   {
@@ -1956,7 +1956,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "edd10aa5981946098c7f4fe38b8cb132"
+      "chunk_uuid": "6f68d93c8d7443da9dc27553d344c0f6"
     }
   },
   {
@@ -1970,7 +1970,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "cef7de7798414a55b9640f24d018bfb8"
+      "chunk_uuid": "4b3c655b68b64581b9eb2dc48dd14ca9"
     }
   },
   {
@@ -1984,7 +1984,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "91ac037beb36467a96f643f3f2684587"
+      "chunk_uuid": "fd08bfdf294545c8bcb3a047ca244d1e"
     }
   },
   {
@@ -1998,7 +1998,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "e1572b3c65da4653b6975c4694ee3dcd"
+      "chunk_uuid": "d25042f077514993bd942d0c03163f67"
     }
   },
   {
@@ -2012,7 +2012,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "da8b5acf412247ebaa0059dc18aae5bb"
+      "chunk_uuid": "f9a8fb5bc31d46e0835f93caa83e72c7"
     }
   },
   {
@@ -2026,7 +2026,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "c81dc55e3ecb41f8a1209d59ac75f76b"
+      "chunk_uuid": "c86df8f38727425db3722c81af5822a3"
     }
   },
   {
@@ -2040,7 +2040,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "5ebfa956c62a46a6a3c5bae1956506ad"
+      "chunk_uuid": "d9433471c78648b9a048431a174069fb"
     }
   },
   {
@@ -2054,7 +2054,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "580ba126a4134ca38ff1f6cad786d6e4"
+      "chunk_uuid": "6d055a828d9849f8891f01f9aeac0c37"
     }
   },
   {
@@ -2068,7 +2068,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "3f106179bc3540c080bea9df46432407"
+      "chunk_uuid": "1f00bb1f63b64758a42b409c23a875a8"
     }
   },
   {
@@ -2082,7 +2082,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "49886e9dac7d43eeb198d77db3ac4298"
+      "chunk_uuid": "b30dd82757cd4deb9fa0d5733d367f40"
     }
   },
   {
@@ -2096,7 +2096,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "42cb826dd75c4035a692d17eb1563479"
+      "chunk_uuid": "039e4455b1de425ca94ae06378e88a0a"
     }
   },
   {
@@ -2110,7 +2110,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "f67e11779c4e47c3b9fa1fe894dadee5"
+      "chunk_uuid": "0124eed774ba4847ad1864f2744a366a"
     }
   },
   {
@@ -2124,7 +2124,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "6764c5450dc5408fb39ed0934322298c"
+      "chunk_uuid": "32be5bff46e643be82a2a9a593ecdc0e"
     }
   },
   {
@@ -2138,7 +2138,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "7dc7d7acf63d4c7098f2d38539fc943f"
+      "chunk_uuid": "493120e0c713418e960323a6f3ac8a4c"
     }
   },
   {
@@ -2152,7 +2152,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "8fbbcb4fd0834a52ac40c51526acf0cc"
+      "chunk_uuid": "0ec3cc4939d147e087ae2bd9afd3fa4b"
     }
   },
   {
@@ -2166,7 +2166,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ae3759bf754441509de51e95cc6656d6"
+      "chunk_uuid": "646401c7f75340b782fe01a844922815"
     }
   },
   {
@@ -2180,7 +2180,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "b090490d56c34f80ae894aa4177aa7c6"
+      "chunk_uuid": "35fa017908e44f76993dbcf2a831108c"
     }
   },
   {
@@ -2194,7 +2194,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "49514d7f6f5040fc8066ed5cd93fa5ae"
+      "chunk_uuid": "6d399363eab041c28721b0c3acac7837"
     }
   },
   {
@@ -2208,7 +2208,7 @@
       "khoan": "2b",
       "diem": "e",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "6c762f0cd1ab49989252ea51daada445"
+      "chunk_uuid": "00a7bff423804c98aab1a2c794e0ca73"
     }
   },
   {
@@ -2222,7 +2222,7 @@
       "khoan": "2b",
       "diem": "g",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a74403e006414068ab4a9d00818cebf6"
+      "chunk_uuid": "52a9eb4251754946926ac1474e7db1ab"
     }
   },
   {
@@ -2236,7 +2236,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "cd4dff2b143f485eaf67e42a922462d1"
+      "chunk_uuid": "0aed1021eccf41e6b9172a12c2d28726"
     }
   },
   {
@@ -2250,7 +2250,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "be78e06a43354fdb88023ca9b4d460dc"
+      "chunk_uuid": "972fae679d3542a58153af6a7b741c69"
     }
   },
   {
@@ -2264,7 +2264,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "8dfdf57e1f6947459bce28584d56444e"
+      "chunk_uuid": "6d60379a5dc34bbbb1aa1f414cda9c9c"
     }
   },
   {
@@ -2278,7 +2278,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "fecd3d0a7f5e484dbb0f26cca84174ab"
+      "chunk_uuid": "930430aef77c435f8debab3fa9495d19"
     }
   },
   {
@@ -2292,7 +2292,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "c587bce1773141c6b76e05b938178832"
+      "chunk_uuid": "7a4975597df64e7192ea6db4291313f4"
     }
   },
   {
@@ -2306,7 +2306,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "72c497c8fbf64004b2ec0117ffb216ca"
+      "chunk_uuid": "5bcf0c23ccb349dd888785cca9ca7a78"
     }
   },
   {
@@ -2320,7 +2320,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "821b82e3351e41ca98d7a688e50dde76"
+      "chunk_uuid": "b3bf67b90cca49d4aea8566e3a2e578c"
     }
   },
   {
@@ -2334,7 +2334,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "177fd60060364c97ab1773bd8dd69c9f"
+      "chunk_uuid": "2a55688969cb40ce902a00f731d7d0b6"
     }
   },
   {
@@ -2348,7 +2348,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "0cd7d90dcc3540288cc36d8ff7c421a4"
+      "chunk_uuid": "cf345478262f4ebbb8bf6b611f8432e4"
     }
   },
   {
@@ -2362,7 +2362,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "4f5a68adca98470e8fd2d7c85e1d3fa4"
+      "chunk_uuid": "e813629ac74b4352aa88c9fe8725b4cd"
     }
   },
   {
@@ -2376,7 +2376,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "480f8f8053424630bdebba2d745fc7d0"
+      "chunk_uuid": "de88ae0102574e23ab73c36430b55b66"
     }
   },
   {
@@ -2390,7 +2390,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a816dd33bce84632b8a7a5e63ee01f6f"
+      "chunk_uuid": "1e597b93fc134a5eae23239593cff718"
     }
   },
   {
@@ -2404,7 +2404,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "49e2a4e504114aba9901719ad26bb680"
+      "chunk_uuid": "46c5e6c1b0394dbab94d8eefb80cfd76"
     }
   },
   {
@@ -2418,7 +2418,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ce4627d53b7048c2aedf29be0626dde9"
+      "chunk_uuid": "dafc36dc64da48b88916ee43c4739bd4"
     }
   },
   {
@@ -2432,7 +2432,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "cfbd352ca2074932a3c2ad5fc04044ae"
+      "chunk_uuid": "818b826775c24b5baa04ae265a7ffaaa"
     }
   },
   {
@@ -2446,7 +2446,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "b8f7b9a664a84d3f80cda073331cb415"
+      "chunk_uuid": "69ec847831304b6e879970ecafbe6cae"
     }
   },
   {
@@ -2460,7 +2460,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "222712dd3a724fe8aacd82708ed1a803"
+      "chunk_uuid": "f38b9b53738f44a9b55dffdaa890d880"
     }
   },
   {
@@ -2474,7 +2474,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "d4862dfde9eb47348b8c3f8109eafac0"
+      "chunk_uuid": "c90c95f3808a4459a54e925cba24a124"
     }
   },
   {
@@ -2488,7 +2488,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "6bdcf48d04f340bfa449c00a3ccc5b9e"
+      "chunk_uuid": "8ff5bf1b0ec74c03a17495c4608df2f7"
     }
   },
   {
@@ -2502,7 +2502,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "b0e1077dd4884996bf9b508a0c075daf"
+      "chunk_uuid": "a4eb84a1428846a48bf9b75923c23356"
     }
   },
   {
@@ -2516,7 +2516,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ea31079810694ba4b0093109b2bee6f5"
+      "chunk_uuid": "d30d2f3d974e48148f122f1e224ca44d"
     }
   },
   {
@@ -2530,7 +2530,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "4c9adacee1f54b27999940077625ae65"
+      "chunk_uuid": "72ecd0db8c0b4ab3b2b407722c493e8b"
     }
   },
   {
@@ -2544,7 +2544,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "841ff2a87c6e45219a2318ed3e9e14ed"
+      "chunk_uuid": "913841f818434ed182cd9d98199cad8a"
     }
   },
   {
@@ -2558,7 +2558,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "6c77a59b313a485db6c1ffabbc5aebdf"
+      "chunk_uuid": "22eeea842bf5463d9a0682a5a106e5bf"
     }
   },
   {
@@ -2572,7 +2572,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a0307bccccdd4970beed8a23f8d83cf8"
+      "chunk_uuid": "d3fa03c6f4e8448ab31e90c8c83fd7fa"
     }
   },
   {
@@ -2586,7 +2586,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "bde3a3830de845bbaf640f766b33047d"
+      "chunk_uuid": "2ad3b753f5fd4f6e861ebddcc1a60c53"
     }
   },
   {
@@ -2600,7 +2600,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "5b2e1aefe9ee4efe881304d0ac85166a"
+      "chunk_uuid": "3eebc60afb2843c29a49321a0177a828"
     }
   },
   {
@@ -2614,7 +2614,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "9e83a8454ef24c788139ff8d92535bde"
+      "chunk_uuid": "0c88d9aeb8b742939cf7bfd19ed9d55a"
     }
   },
   {
@@ -2628,7 +2628,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "728a64f719294965afcd5bba5aa0dead"
+      "chunk_uuid": "dde3faa11f4541acb80e77363b78af78"
     }
   },
   {
@@ -2642,7 +2642,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "14327d8dd078446289d8f0918a18c6cb"
+      "chunk_uuid": "498d6531ceb140d8a18334e6f31c6d8e"
     }
   },
   {
@@ -2656,7 +2656,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "3e09ab2ab630466d83dbfd5251f61fa5"
+      "chunk_uuid": "9dabf303a9864a01b48fbd529ee3d8cf"
     }
   },
   {
@@ -2670,7 +2670,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "339fbe0dbe4d4927a3b91c0e08b2eb68"
+      "chunk_uuid": "d6ae5bb6216b40e7a06b2991b4fa16c7"
     }
   },
   {
@@ -2684,7 +2684,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "dbd930230035461399909d638df9c90a"
+      "chunk_uuid": "6492b502517340879df5c0b3599a55da"
     }
   },
   {
@@ -2698,7 +2698,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "cb50ead39fb2415cbed5fe4528d4983b"
+      "chunk_uuid": "48b1ce18de72497d972e03782be0db85"
     }
   },
   {
@@ -2712,7 +2712,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ebea4b12751d432a9e3f0b8a63bacc4f"
+      "chunk_uuid": "72d6c19bf2354a63bb869b76f0726bea"
     }
   },
   {
@@ -2726,7 +2726,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "969a87c6de6344538bc0a1b3e5b8c6c4"
+      "chunk_uuid": "4c77aa89ec744a99bb01798675e87b5a"
     }
   },
   {
@@ -2740,7 +2740,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "af996cbe4a894d6cbe2171e3462d370c"
+      "chunk_uuid": "32931aa36a3446ca942bd80b01e07bcf"
     }
   },
   {
@@ -2754,7 +2754,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "e1550453a13043d8a1b8fcf897cfd635"
+      "chunk_uuid": "9d7a7c83cbb246549f09fc040af581e7"
     }
   },
   {
@@ -2768,7 +2768,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "efb33b93e87b4600bf8df47bba3abce3"
+      "chunk_uuid": "9fd651095ff749eb93f66a1c8d9fa763"
     }
   },
   {
@@ -2782,7 +2782,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "620fe1519a3647cb97b7bade0473b3fe"
+      "chunk_uuid": "5daa5d22b7aa40ca89bfe9969d711e34"
     }
   },
   {
@@ -2796,7 +2796,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "652866ebf5054e3d8946ccadae2e4e9c"
+      "chunk_uuid": "fd83c1bc913f460fa67b2b0a16e382cf"
     }
   },
   {
@@ -2810,7 +2810,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "756c9a28733d462891716a37f39cd875"
+      "chunk_uuid": "c29b96edb17b4331b5f1435572481dc5"
     }
   },
   {
@@ -2824,7 +2824,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "3b655bde36044f0781770670d7e8b33e"
+      "chunk_uuid": "360d5c7b5d11429c913f68b771cec4f0"
     }
   },
   {
@@ -2838,7 +2838,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "6c12c549efad447390497640fe3fc9bf"
+      "chunk_uuid": "4c8185e5737247c1a3149cd0027a1553"
     }
   },
   {
@@ -2852,7 +2852,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1d690b94161040d284f9026329de39a0"
+      "chunk_uuid": "e90342e57c1c40fa9c1222d402597f38"
     }
   },
   {
@@ -2866,7 +2866,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "9abdb7ad5cb648fab95d92824042c048"
+      "chunk_uuid": "6243c69995544b6cb4c2b2ae00a477d7"
     }
   },
   {
@@ -2880,7 +2880,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "947f3aa1ed0e4acdb0e727026de6baa5"
+      "chunk_uuid": "20718f471aad4f00a081f04c8b58f387"
     }
   },
   {
@@ -2894,7 +2894,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "f408747d2fb74747be3a542a9bc30bc6"
+      "chunk_uuid": "110a2046d763461b92683d7d5bb658a5"
     }
   },
   {
@@ -2908,7 +2908,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1493a244b3124c3086f972b60441c7ed"
+      "chunk_uuid": "ee86f624c22647df958aeb04b531d63b"
     }
   },
   {
@@ -2922,7 +2922,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a944b5d8f4084a39ae5c1cf07e51e423"
+      "chunk_uuid": "e3f63e7f1b0748ca87efc741e4b3c1bc"
     }
   },
   {
@@ -2936,7 +2936,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "31a2532bda3248bdbc7998d76e344263"
+      "chunk_uuid": "3de46cc96d364c4a8ac43ceeca630d22"
     }
   },
   {
@@ -2950,7 +2950,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "74c130a8c23c4c82bb85cc20addaddfd"
+      "chunk_uuid": "fdaa2296fdcc4ba6a74ec7cb56fdee5f"
     }
   },
   {
@@ -2964,7 +2964,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "741581bd10af43ad9de4852e88cf6d89"
+      "chunk_uuid": "ba2302dc8a144ccf8b08bd7fe78ff3c0"
     }
   },
   {
@@ -2978,7 +2978,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ffdd64ebfa06400b94a9e0a9e6dd4d10"
+      "chunk_uuid": "1d03b4060b1b4417827e7432ac985795"
     }
   },
   {
@@ -2992,7 +2992,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "3019d4593b4749a1ba23193caa716892"
+      "chunk_uuid": "2d8f24b04bba45d5948797296d88928f"
     }
   },
   {
@@ -3006,7 +3006,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "3c2c6c2d00884ede9763c4a2b76ab396"
+      "chunk_uuid": "b094dcfc1cc0470f8f52aa457fc0cd76"
     }
   },
   {
@@ -3020,7 +3020,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "bbd44b94ad0547ea843dbb28e43d47b9"
+      "chunk_uuid": "37d25f703c4644cdb769d1280b13822d"
     }
   },
   {
@@ -3034,7 +3034,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "985b05a513e849ec8c7b5563277cd100"
+      "chunk_uuid": "cf62d8fd83e942d1ae2019a8f729a7e9"
     }
   },
   {
@@ -3048,7 +3048,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "650ec20169404728be494a176701a0e8"
+      "chunk_uuid": "c21aff6e340f4b93909618928b35ef54"
     }
   },
   {
@@ -3062,7 +3062,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "73ee254cac224f8e9918260fe37b045a"
+      "chunk_uuid": "2346bdb69b2f4eb2aaefe4e04e215e3c"
     }
   },
   {
@@ -3076,7 +3076,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "13ec7a3907ec442fb0f61ac8989e673c"
+      "chunk_uuid": "990f88bd4b7b4d16b0d876809dcf9826"
     }
   },
   {
@@ -3090,7 +3090,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ebc97fb6dcfc40adb5aa4f4e10879d48"
+      "chunk_uuid": "22aa520ec35e4508a7b43fbc6c81cc84"
     }
   },
   {
@@ -3104,7 +3104,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "74cef2e2ba454d63a84ced57ae5e835f"
+      "chunk_uuid": "402863c19e5a4848a72c1666ee8157bd"
     }
   },
   {
@@ -3118,7 +3118,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "62c36a6167b345f0b66ec6a688e838aa"
+      "chunk_uuid": "3c398099d3e64db2ad6c2416d41f20f8"
     }
   },
   {
@@ -3132,7 +3132,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ff8d7e5d0ae7441bbfc747a39c0b9bc6"
+      "chunk_uuid": "ffb1af5cb5ab4a9b85ba910e81501503"
     }
   },
   {
@@ -3146,7 +3146,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "12d7b55babfc4997b699852c2bba4b93"
+      "chunk_uuid": "b2ace9b316674b04924b1f8f68045db3"
     }
   },
   {
@@ -3160,7 +3160,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "d3564e998fe649eab1fad867465152eb"
+      "chunk_uuid": "e7d8c8b660e046208588da69a9d89b99"
     }
   },
   {
@@ -3174,7 +3174,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "cf7d9447a0c04430a380d8a324fa4e15"
+      "chunk_uuid": "c8bbb000fb7d43bcb9723e0f5ded4654"
     }
   },
   {
@@ -3188,7 +3188,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "f33d8f96718f4222a1ba189e2443135b"
+      "chunk_uuid": "eae9afdad8fd4e19ae2eac68b81a429d"
     }
   },
   {
@@ -3202,7 +3202,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "9a598b0ec56f41f982351a489deeb245"
+      "chunk_uuid": "423c127ea0594e65a7f505746fe58692"
     }
   },
   {
@@ -3216,7 +3216,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "d788fa1041dd43319b9605d9cdcb23ae"
+      "chunk_uuid": "4c27287575ac43d2a328fc2dc5b0cd46"
     }
   },
   {
@@ -3230,7 +3230,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "632bc32f845b41d2a7115c5246f397de"
+      "chunk_uuid": "e547c480700f4929bd50baa97264bc8b"
     }
   },
   {
@@ -3244,7 +3244,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "6538b724eb3d481587ce1e19c9596fbc"
+      "chunk_uuid": "ebd59d352c7d4a1188f5890bfc97494d"
     }
   },
   {
@@ -3258,7 +3258,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "df101a2461904696b3fabb2d1b5ff757"
+      "chunk_uuid": "a67e80b2498d4fc1af4a6801491b55a8"
     }
   },
   {
@@ -3272,7 +3272,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "51f5fb6ab8f243389e5bdff5c6b3d860"
+      "chunk_uuid": "50bf4696af8e4892aa340f68ad64a4c8"
     }
   },
   {
@@ -3286,7 +3286,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a135edfa7561400992a017f86d3ba76e"
+      "chunk_uuid": "8f0ec4588ae84dc1967f62c65650d432"
     }
   },
   {
@@ -3300,7 +3300,7 @@
       "khoan": "2b",
       "diem": "c",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "6d25a2398be04f6e9465bfc9159cdd70"
+      "chunk_uuid": "c1c31647556145d49b8a950737dd1b04"
     }
   },
   {
@@ -3314,7 +3314,7 @@
       "khoan": "2b",
       "diem": "d",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "af477e901bf44a5ba4aa2baf54598084"
+      "chunk_uuid": "8e00ee92eb7f4c13808b8b8e55e293c3"
     }
   },
   {
@@ -3328,7 +3328,7 @@
       "khoan": "2b",
       "diem": "đ",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "c6b9911c87af421d9f89fad433a4db51"
+      "chunk_uuid": "6b64bfdf2aa145fa81f36a51402f1245"
     }
   },
   {
@@ -3342,7 +3342,7 @@
       "khoan": "2b",
       "diem": "e",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "cf74caf2fa11413995dafb50fad16e49"
+      "chunk_uuid": "3dc7977453054ee092734f28c1a9b7cd"
     }
   },
   {
@@ -3356,7 +3356,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "f7537638fd8041779956b2dde44d81df"
+      "chunk_uuid": "295c609bffd5444d97441aeecae37d75"
     }
   },
   {
@@ -3370,7 +3370,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "bf10ce988861464c8c01f44a494099d1"
+      "chunk_uuid": "51c71c4f018a45e9bc545c576b6b2521"
     }
   },
   {
@@ -3384,7 +3384,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "51b9fa96f6804d378dd16a2e4df05b4a"
+      "chunk_uuid": "108e9d6f29b34cce8dcce012b78a1719"
     }
   },
   {
@@ -3398,7 +3398,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "7efbb5338f4f4932ba69cb6fe3c778d8"
+      "chunk_uuid": "465bcd1c7cd04454b1950f7bb646cf4e"
     }
   },
   {
@@ -3412,7 +3412,7 @@
       "khoan": "2b",
       "diem": "a",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "5e2ce738aaeb420a9800e7ea548ff04a"
+      "chunk_uuid": "a325269e04c646e38ea15c6ec464c7fe"
     }
   },
   {
@@ -3426,7 +3426,7 @@
       "khoan": "2b",
       "diem": "b",
       "type": "LEGAL_RULE",
-      "chunk_uuid": "c6185807c2c340859885ee2a803addcd"
+      "chunk_uuid": "534b54cebda64b7b8f0222be73537391"
     }
   },
   {
@@ -3440,7 +3440,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a44cf73b0ef74f60af617178e828f90d"
+      "chunk_uuid": "5b9b18c5a6954d6b8e8999a18abf4c26"
     }
   },
   {
@@ -3454,7 +3454,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "1d7378ba77ac48639cff94fd5d61e36c"
+      "chunk_uuid": "70cafdc59a924976b9ec97ecf2b04320"
     }
   },
   {
@@ -3468,7 +3468,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "44815177c65c498590d4f04a56237370"
+      "chunk_uuid": "b23daa7c8f7b457cba5e3a10115152e3"
     }
   },
   {
@@ -3482,7 +3482,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "912fa772e2a649b89e77034c63d87d39"
+      "chunk_uuid": "01082eb276e949058fad34e9f76b0976"
     }
   },
   {
@@ -3496,7 +3496,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "eb25f9fb9c6d4a349af47b96de7e5e84"
+      "chunk_uuid": "7d6e4180b92c4ba3b3f35940f19718b0"
     }
   },
   {
@@ -3510,7 +3510,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "ee9c75c392d84afa86980d6c7f18f169"
+      "chunk_uuid": "9ea188c026a84f1cb27971bf38d19094"
     }
   },
   {
@@ -3524,7 +3524,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "44466ac57d2146fea663beb1586c2782"
+      "chunk_uuid": "e5825c8d8d74409498a0cece7659f7a5"
     }
   },
   {
@@ -3538,7 +3538,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "63bc19b10e154405b7913191d861466d"
+      "chunk_uuid": "89a0791f26b34794ae5d9d4efc25a43d"
     }
   },
   {
@@ -3552,7 +3552,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "9943298777f24a8caa15145592e45bb0"
+      "chunk_uuid": "9d18adeea9704b8888cf05a7cc1c6756"
     }
   },
   {
@@ -3566,7 +3566,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "fa9edc32d95144378aaa68dc851ad58d"
+      "chunk_uuid": "85b25fdd84fb497eaddf9888b53daa50"
     }
   },
   {
@@ -3580,7 +3580,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "41f5324c6f0248a8af7b725486b04b50"
+      "chunk_uuid": "176e90b91d474e9380b4366fd646cfa0"
     }
   },
   {
@@ -3594,7 +3594,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "830eddd1cc0240e287db23070e6cd704"
+      "chunk_uuid": "07ded4f6798c43a682d7fab9a0603c27"
     }
   },
   {
@@ -3608,7 +3608,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "d33eac68d12946fe9f8d89b1f566079a"
+      "chunk_uuid": "601bf1e815b143f3ba42b72d7a5686ea"
     }
   },
   {
@@ -3622,7 +3622,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "62c0360abe7a47ffbf25914778a723c7"
+      "chunk_uuid": "1b6bbb0ca8904450b2e2abb4f828601c"
     }
   },
   {
@@ -3636,7 +3636,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "de1c736940774a1c99be12302c4e2183"
+      "chunk_uuid": "bf227de2ac39463f805636a6ae3ef122"
     }
   },
   {
@@ -3650,7 +3650,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "bc14338c3fca41da8ffa203ec505b7fa"
+      "chunk_uuid": "1e7f32b12d284b3ea395016d80f28ff0"
     }
   },
   {
@@ -3664,7 +3664,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "9452790d82e041de98e6d0ecd8709c0c"
+      "chunk_uuid": "8e9a35b2202e4f5fa7cd62a6cb4553f2"
     }
   },
   {
@@ -3678,7 +3678,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a119a38bacb44c1e88b48686847c862f"
+      "chunk_uuid": "d49c834bf18245ad91654e74ffc4b452"
     }
   },
   {
@@ -3692,7 +3692,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "212cd3f42f8b4590b290eff03ffac44b"
+      "chunk_uuid": "23ce40c62e00418d8b8a3f790865644f"
     }
   },
   {
@@ -3706,7 +3706,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "62fd7a721f7c4dc690de05fffb3d1d9d"
+      "chunk_uuid": "56b4f5df5e1941f8aa791bcd82b3f7c3"
     }
   },
   {
@@ -3720,7 +3720,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "4984f0d1b1264410bb2e5f336d18df17"
+      "chunk_uuid": "e89866e8148c45d093033f138d9ab3ae"
     }
   },
   {
@@ -3734,7 +3734,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "d2b861b1976e4a369e38ffbd80a9ab67"
+      "chunk_uuid": "a45ad6b486a149b385bacd085e9d3d92"
     }
   },
   {
@@ -3748,7 +3748,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "bc6f821ef12746709a37978f9afd8560"
+      "chunk_uuid": "624c5192cd8847f59af017befaf65eba"
     }
   },
   {
@@ -3762,7 +3762,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "0cb878ef4e294531bc116b0041712e50"
+      "chunk_uuid": "71b9101cdce74c57b4788ad649d77984"
     }
   },
   {
@@ -3776,7 +3776,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "e7c55c6b89e040979234423daf5f6843"
+      "chunk_uuid": "23f4a73f3f9e4925be711a1ed8b5eb8b"
     }
   },
   {
@@ -3790,7 +3790,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "087ed2ca7cfd43b882812a5b62d8de96"
+      "chunk_uuid": "fa0663c49a6c4b7dacaaa6d5e5c6ab52"
     }
   },
   {
@@ -3804,7 +3804,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "704362ccc8ac4750a31f9a0e4128eafb"
+      "chunk_uuid": "d90b1fb5085041ffa811843c85bf0bde"
     }
   },
   {
@@ -3818,7 +3818,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "0ed1401ec745412aa26c6ea44313355a"
+      "chunk_uuid": "96272aad0393416fb501922de27092c2"
     }
   },
   {
@@ -3832,7 +3832,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "a8dd165db4eb47eda59f689da05f3822"
+      "chunk_uuid": "8f51ba43413e4ee3bcdcb69c949abe3b"
     }
   },
   {
@@ -3846,7 +3846,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "5938ff32c2784d5aa9e2a4d1e5537287"
+      "chunk_uuid": "7029e95a44bb4ca59055502e041e8bb2"
     }
   },
   {
@@ -3860,7 +3860,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "c2b1bc45028e40729eefd850ee26faad"
+      "chunk_uuid": "27a15f884ae34aab837997fec691c76a"
     }
   },
   {
@@ -3874,7 +3874,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "2b4311a21af44c068efd1d6510284144"
+      "chunk_uuid": "f47197a2f5874207b12cbd8b95b8468b"
     }
   },
   {
@@ -3888,7 +3888,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "2d2b1d860a6c4939b2ae63205c03c23b"
+      "chunk_uuid": "ddd478dc663d4b1dbb8e35b9e6f2cd96"
     }
   },
   {
@@ -3902,7 +3902,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "494f96bcba564199a1aadbe7784721ac"
+      "chunk_uuid": "9b62292f00464097952f5d96b1155042"
     }
   },
   {
@@ -3916,7 +3916,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "b3c8f6d1afc942129a964a61a8b1090c"
+      "chunk_uuid": "1981c6c49a6a428a8842b0b7a45e776d"
     }
   },
   {
@@ -3930,7 +3930,7 @@
       "khoan": null,
       "diem": null,
       "type": "LEGAL_RULE",
-      "chunk_uuid": "23aaed4474474ca1bb756c37d63100e3"
+      "chunk_uuid": "9753212d76ce41e1869e3570a275a146"
     }
   }
 ]
