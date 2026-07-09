@@ -143,8 +143,7 @@ cypher_query = """
 // ==========================================
 // 1. HYBRID SEARCH (TỐC ĐỘ CỦA QUERY 2)
 // ==========================================
-MATCH (v_chunk)
-SEARCH v_chunk IN (VECTOR INDEX chunk_vector_index FOR $question_vector LIMIT 8) SCORE AS v_score
+CALL db.index.vector.queryNodes('chunk_vector_index', 8, $question_vector) YIELD node AS v_chunk, score AS v_score
 
 CALL db.index.fulltext.queryNodes("chunk_content_index", $safe_text)
 YIELD node AS f_chunk, score AS f_score
