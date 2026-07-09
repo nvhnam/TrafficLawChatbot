@@ -32,8 +32,8 @@ models:
   # by itself prevent a daily quota (like the free-tier 20/day cap) from being
   # hit - that's what the fallback chain is for.
   chat_rate_limit:
-    min_interval_seconds: 2
-    max_calls_per_minute: 8
+    min_interval_seconds: 0
+    max_calls_per_minute: 2000
   embedding: "AITeamVN/Vietnamese_Embedding"
 
 generation_config:
