@@ -1,0 +1,10 @@
+# Dependencies GỌN cho việc nạp Neo4j + chạy đánh giá (không kèm OCR/docling nặng).
+# Đủ để chạy: load_neo4j.py, run_systems.py, score.py và import System B (bot.py).
+neo4j==6.1.0
+sentence-transformers==5.3.0
+torch==2.9.1
+numpy
+safetensors
+google-generativeai>=0.8.0
+python-dotenv==1.2.2
+PyYAML==6.0.3

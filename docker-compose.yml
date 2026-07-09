@@ -1,0 +1,38 @@
+# Neo4j cho hệ thống Graph-RAG (System B) + môi trường chạy đánh giá.
+# Dùng cho: nạp 3 nghị định (100/123/168) đã trích xuất -> chấm 300 câu hỏi.
+#
+# Chạy:   docker compose up -d
+# Web UI: http://localhost:7474   (bolt://localhost:7687)
+# Login:  neo4j / trafficlaw123   (khớp .env: USER_NEO4J / PASSWORD_NEO4J)
+#
+# GHI CHÚ QUAN TRỌNG:
+#  - Đây là Neo4j 5.x Community: đã có sẵn Vector Index gốc (native) 1024 chiều
+#    + Full-text Index -> ĐỦ cho đường truy vấn của bot (backend/chatbot/bot.py:
+#    chunk_vector_index + chunk_content_index + traversal). KHÔNG bắt buộc GDS/GraphSAGE
+#    cho việc chạy đánh giá.
+#  - APOC bật sẵn vì một số script ingest có thể dùng.
+#  - Toàn bộ ingest (nạp node + embedding) chạy LOCAL, KHÔNG tốn API Gemini.
+
+services:
+  neo4j:
+    image: neo4j:5.24-community
+    container_name: trafficlaw-neo4j
+    ports:
+      - "7474:7474"   # HTTP browser
+      - "7687:7687"   # Bolt driver
+    environment:
+      - NEO4J_AUTH=neo4j/trafficlaw123
+      - NEO4J_PLUGINS=["apoc"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      - NEO4J_server_memory_heap_initial__size=1G
+      - NEO4J_server_memory_heap_max__size=2G
+      - NEO4J_server_memory_pagecache_size=1G
+    volumes:
+      - ./data/evaluation/neo4j_db/data:/data
+      - ./data/evaluation/neo4j_db/logs:/logs
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:7474 || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+    restart: unless-stopped

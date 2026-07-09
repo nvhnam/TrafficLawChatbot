@@ -1,0 +1,11 @@
+﻿system,metric,n,correct,accuracy_%,ci95_low,ci95_high
+A_llm_only,fine_accuracy,5,0,0.0,-0.0,43.4
+A_llm_only,legal_basis_accuracy,5,0,0.0,-0.0,43.4
+A_llm_only,no_data_accuracy,0,0,0.0,0.0,0.0
+A_llm_only,clarification_accuracy,0,0,0.0,0.0,0.0
+A_llm_only,hallucination_rate,0,0,0.0,0.0,0.0
+B_graph_rag,fine_accuracy,5,3,60.0,23.1,88.2
+B_graph_rag,legal_basis_accuracy,5,1,20.0,3.6,62.4
+B_graph_rag,no_data_accuracy,0,0,0.0,0.0,0.0
+B_graph_rag,clarification_accuracy,0,0,0.0,0.0,0.0
+B_graph_rag,hallucination_rate,0,0,0.0,0.0,0.0

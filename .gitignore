@@ -15,3 +15,12 @@ cloud_file_json_prepare_upload_storage/
 folder_check/
 startup_log.txt
 startup_err.txt
+
+# Neo4j Docker volume data — binary DB files, ~624MB
+# Có thể tái tạo bằng: docker compose up + python harness/load_neo4j.py
+data/evaluation/neo4j_db/
+
+# Evaluation runtime outputs (kết quả chạy, log — không phải source)
+# data/evaluation/results/*.jsonl
+# data/evaluation/results/*.csv
+# data/evaluation/results/run.log
