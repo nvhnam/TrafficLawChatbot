@@ -23,10 +23,11 @@ export default function DropZone({ onFiles }) {
 
   return (
     <div
-      className="rounded-xl flex flex-col items-center justify-center gap-3 py-10 cursor-pointer transition-colors select-none"
+      className="rounded-2xl flex flex-col items-center justify-center gap-3 py-12 cursor-pointer transition-all duration-200 select-none"
       style={{
         border: `2px dashed ${dragging ? 'var(--accent)' : 'var(--border)'}`,
         background: dragging ? 'var(--accent-dim)' : 'var(--surface2)',
+        transform: dragging ? 'scale(1.01)' : 'scale(1)',
       }}
       onDragOver={e => { e.preventDefault(); setDragging(true) }}
       onDragLeave={() => setDragging(false)}
@@ -37,8 +38,8 @@ export default function DropZone({ onFiles }) {
       onKeyDown={e => e.key === 'Enter' && inputRef.current?.click()}
     >
       <div
-        className="p-3 rounded-full"
-        style={{ background: 'var(--accent-dim)', color: 'var(--accent)' }}
+        className="p-3.5 rounded-full"
+        style={{ background: 'linear-gradient(135deg, var(--accent) 0%, var(--accent-2-solid) 100%)', color: '#fff', boxShadow: '0 4px 16px rgba(59,130,246,.35)' }}
       >
         <Upload size={22} />
       </div>

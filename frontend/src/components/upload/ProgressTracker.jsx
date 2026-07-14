@@ -45,10 +45,7 @@ export default function ProgressTracker({ active, onDone }) {
     : 0
 
   return (
-    <div
-      className="mt-4 rounded-xl px-4 py-4 space-y-3"
-      style={{ background: 'var(--surface2)', border: '1px solid var(--border)' }}
-    >
+    <div className="surface-card mt-4 px-4 py-4 space-y-3">
       {/* Phase label */}
       <div className="flex items-center gap-2">
         {isDone && <CheckCircle size={15} style={{ color: '#34d399' }} />}

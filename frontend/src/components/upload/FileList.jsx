@@ -17,7 +17,7 @@ export default function FileList({ files, onRemove, disabled }) {
         return (
           <li
             key={i}
-            className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm"
+            className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm transition-colors"
             style={{ background: 'var(--surface2)', border: '1px solid var(--border)' }}
           >
             <FileText size={14} style={{ color }} />

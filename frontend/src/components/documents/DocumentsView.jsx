@@ -38,17 +38,22 @@ export default function DocumentsView() {
   return (
     <div className="h-full overflow-y-auto px-6 py-6 max-w-3xl mx-auto w-full">
       <div className="flex items-center justify-between mb-5">
-        <h2 className="text-base font-semibold" style={{ color: 'var(--text)' }}>
-          Thư viện văn bản
-        </h2>
+        <div>
+          <h2 className="text-lg font-bold" style={{ color: 'var(--text)' }}>
+            Thư viện văn bản
+          </h2>
+          <p className="text-xs mt-0.5" style={{ color: 'var(--muted)' }}>
+            Nguồn dữ liệu đã được nhúng vào đồ thị tri thức
+          </p>
+        </div>
         <button
-          className="p-1.5 rounded-lg transition-colors cursor-pointer"
-          style={{ color: 'var(--muted)' }}
+          className="icon-btn"
           onClick={load}
           disabled={loading}
           title="Tải lại"
+          aria-label="Tải lại danh sách"
         >
-          <RefreshCw size={15} />
+          <RefreshCw size={15} className={loading ? 'animate-spin' : ''} />
         </button>
       </div>
 
@@ -68,7 +73,7 @@ export default function DocumentsView() {
       {error && (
         <div
           className="flex items-center gap-2 px-4 py-3 rounded-xl text-sm"
-          style={{ background: 'rgba(239,68,68,.1)', color: '#f87171', border: '1px solid rgba(239,68,68,.2)' }}
+          style={{ background: 'var(--danger-dim)', color: 'var(--danger)', border: '1px solid rgba(248,113,113,.25)' }}
         >
           <AlertCircle size={16} />
           {error}
@@ -76,7 +81,7 @@ export default function DocumentsView() {
       )}
 
       {!loading && !error && docs.length === 0 && (
-        <div className="text-center py-16 text-sm" style={{ color: 'var(--muted)' }}>
+        <div className="surface-card text-center py-14 px-6 text-sm" style={{ color: 'var(--muted)' }}>
           Chưa có văn bản nào được nhúng. Hãy tải lên tài liệu ở tab Upload.
         </div>
       )}

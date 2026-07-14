@@ -4,7 +4,7 @@ import { streamChat } from '../../lib/api'
 import MessageBubble from './MessageBubble'
 import SourcesPanel from './SourcesPanel'
 import ImageUpload from './ImageUpload'
-import { Send, RefreshCw } from '../icons'
+import { Send, RefreshCw, Shield, MessageSquare } from '../icons'
 
 const SUGGESTED = [
   'Tốc độ tối đa trong khu dân cư là bao nhiêu?',
@@ -72,11 +72,14 @@ export default function ChatView() {
       <div className="flex-1 overflow-y-auto min-h-0 chat-scroll">
         {messages.length === 0 ? (
           <div className="empty-state">
-            <div className="empty-logo">
-              <span>VN</span>
-              <span className="empty-logo-sub">Traffic Law AI</span>
+            <div className="empty-icon" aria-hidden="true">
+              <Shield size={26} />
             </div>
-            <p className="empty-sub">Hỏi về luật giao thông đường bộ Việt Nam</p>
+            <div className="empty-logo">
+              <span className="empty-logo-title">VN Traffic Law AI</span>
+              <span className="empty-logo-sub">Trợ lý pháp luật giao thông</span>
+            </div>
+            <p className="empty-sub">Hỏi về luật giao thông đường bộ Việt Nam — có trích dẫn nguồn rõ ràng</p>
             <div className="suggested-grid">
               {SUGGESTED.map(s => (
                 <button
@@ -84,7 +87,8 @@ export default function ChatView() {
                   className="suggested-btn"
                   onClick={() => send(s)}
                 >
-                  {s}
+                  <MessageSquare size={13} className="suggested-btn-icon" />
+                  <span>{s}</span>
                 </button>
               ))}
             </div>
@@ -108,52 +112,55 @@ export default function ChatView() {
 
       {/* ── Input bar ─────────────────────────────────────────────── */}
       <div className="input-bar-wrap">
-        <div
-          className="input-bar"
-          style={{ borderColor: focused ? 'var(--accent)' : 'var(--border)' }}
-          onFocus={() => setFocused(true)}
-          onBlur={() => setFocused(false)}
-        >
-          <ImageUpload image={image} onChange={setImage} />
+        <div className="input-bar-inner">
+          <div
+            className={`input-bar${focused ? ' input-bar--focused' : ''}`}
+            onFocus={() => setFocused(true)}
+            onBlur={() => setFocused(false)}
+          >
+            <ImageUpload image={image} onChange={setImage} />
 
-          <textarea
-            ref={textareaRef}
-            rows={1}
-            className="input-textarea"
-            placeholder="Hỏi về luật giao thông… (Enter để gửi)"
-            value={input}
-            onChange={e => {
-              setInput(e.target.value)
-              e.target.style.height = 'auto'
-              e.target.style.height = Math.min(e.target.scrollHeight, 140) + 'px'
-            }}
-            onKeyDown={onKeyDown}
-          />
+            <textarea
+              ref={textareaRef}
+              rows={1}
+              className="input-textarea"
+              placeholder="Hỏi về luật giao thông… (Enter để gửi)"
+              value={input}
+              onChange={e => {
+                setInput(e.target.value)
+                e.target.style.height = 'auto'
+                e.target.style.height = Math.min(e.target.scrollHeight, 140) + 'px'
+              }}
+              onKeyDown={onKeyDown}
+            />
 
-          <div className="input-actions">
-            {messages.length > 0 && !streaming && (
+            <div className="input-actions">
+              {messages.length > 0 && !streaming && (
+                <button
+                  className="icon-btn"
+                  onClick={clearMessages}
+                  title="Xóa cuộc trò chuyện"
+                  aria-label="Xóa cuộc trò chuyện"
+                >
+                  <RefreshCw size={15} />
+                </button>
+              )}
               <button
-                className="icon-btn"
-                onClick={clearMessages}
-                title="Xóa cuộc trò chuyện"
+                className={`send-btn${canSend ? ' send-btn--active' : ''}`}
+                onClick={() => send()}
+                disabled={!canSend}
+                title="Gửi (Enter)"
+                aria-label="Gửi tin nhắn"
               >
-                <RefreshCw size={15} />
+                <Send size={14} />
               </button>
-            )}
-            <button
-              className={`send-btn${canSend ? ' send-btn--active' : ''}`}
-              onClick={() => send()}
-              disabled={!canSend}
-              title="Gửi (Enter)"
-            >
-              <Send size={14} />
-            </button>
+            </div>
           </div>
-        </div>
 
-        <p className="input-hint">
-          Enter để gửi&nbsp;&nbsp;·&nbsp;&nbsp;Shift + Enter xuống dòng
-        </p>
+          <p className="input-hint">
+            <kbd>Enter</kbd> để gửi&nbsp;&nbsp;·&nbsp;&nbsp;<kbd>Shift + Enter</kbd> xuống dòng
+          </p>
+        </div>
       </div>
     </div>
   )

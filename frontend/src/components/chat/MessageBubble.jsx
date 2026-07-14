@@ -1,7 +1,7 @@
 import { marked } from 'marked'
 import { useRef, useEffect, useState, useCallback } from 'react'
 import { createPortal } from 'react-dom'
-import { X } from '../icons'
+import { X, User } from '../icons'
 
 marked.setOptions({ breaks: true, gfm: true })
 
@@ -142,8 +142,11 @@ export default function MessageBubble({ message }) {
   /* ── User bubble ── */
   if (isUser) {
     return (
-      <div className="flex justify-end">
+      <div className="msg-user-row">
         <div className="msg-user">{text}</div>
+        <div className="user-avatar" aria-hidden="true">
+          <User size={14} />
+        </div>
       </div>
     )
   }

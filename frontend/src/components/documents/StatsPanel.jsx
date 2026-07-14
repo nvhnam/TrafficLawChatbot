@@ -7,14 +7,10 @@ export default function StatsPanel({ docCount, chunkCount }) {
         { Icon: FileText, label: 'Văn bản', value: docCount },
         { Icon: Database, label: 'Đoạn văn bản', value: chunkCount },
       ].map(({ Icon, label, value }) => (
-        <div
-          key={label}
-          className="flex items-center gap-3 rounded-xl p-4"
-          style={{ background: 'var(--surface2)', border: '1px solid var(--border)' }}
-        >
+        <div key={label} className="surface-card flex items-center gap-3 p-4">
           <div
-            className="p-2 rounded-lg"
-            style={{ background: 'var(--accent-dim)', color: 'var(--accent)' }}
+            className="p-2.5 rounded-lg"
+            style={{ background: 'linear-gradient(135deg, var(--accent) 0%, var(--accent-2-solid) 100%)', color: '#fff' }}
           >
             <Icon size={18} />
           </div>

@@ -8,7 +8,8 @@ export default function App() {
   const [activeTab, setActiveTab] = useState('chat')
 
   return (
-    <div className="flex flex-col h-screen overflow-hidden" style={{ background: 'var(--bg)' }}>
+    <div className="app-shell flex flex-col h-dvh overflow-hidden">
+      <div className="app-ambient" aria-hidden="true" />
       <TabBar active={activeTab} onChange={setActiveTab} />
       <div className="flex-1 min-h-0">
         {activeTab === 'chat' && <ChatView />}

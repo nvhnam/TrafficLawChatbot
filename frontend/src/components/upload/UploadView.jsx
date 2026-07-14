@@ -53,9 +53,14 @@ export default function UploadView() {
 
   return (
     <div className="h-full overflow-y-auto px-6 py-6 max-w-2xl mx-auto w-full">
-      <h2 className="text-base font-semibold mb-5" style={{ color: 'var(--text)' }}>
-        Tải lên văn bản
-      </h2>
+      <div className="mb-5">
+        <h2 className="text-lg font-bold" style={{ color: 'var(--text)' }}>
+          Tải lên văn bản
+        </h2>
+        <p className="text-xs mt-0.5" style={{ color: 'var(--muted)' }}>
+          Thêm tài liệu mới để nhúng vào đồ thị tri thức
+        </p>
+      </div>
 
       <DropZone onFiles={addFiles} />
       <FileList files={files} onRemove={removeFile} disabled={uploading} />
@@ -63,7 +68,7 @@ export default function UploadView() {
       {error && (
         <div
           className="flex items-center gap-2 mt-4 px-4 py-3 rounded-xl text-sm"
-          style={{ background: 'rgba(239,68,68,.1)', color: '#f87171', border: '1px solid rgba(239,68,68,.2)' }}
+          style={{ background: 'var(--danger-dim)', color: 'var(--danger)', border: '1px solid rgba(248,113,113,.25)' }}
         >
           <AlertCircle size={15} /> {error}
         </div>
@@ -72,7 +77,7 @@ export default function UploadView() {
       {done && !error && (
         <div
           className="flex items-center gap-2 mt-4 px-4 py-3 rounded-xl text-sm"
-          style={{ background: 'rgba(52,211,153,.1)', color: '#34d399', border: '1px solid rgba(52,211,153,.2)' }}
+          style={{ background: 'var(--success-dim)', color: 'var(--success)', border: '1px solid rgba(52,211,153,.25)' }}
         >
           <CheckCircle size={15} /> Nhúng hoàn tất!
         </div>
@@ -82,8 +87,12 @@ export default function UploadView() {
 
       {files.length > 0 && !uploading && (
         <button
-          className="mt-5 w-full py-2.5 rounded-xl text-sm font-semibold transition-colors cursor-pointer"
-          style={{ background: 'var(--accent)', color: '#fff' }}
+          className="mt-5 w-full py-2.5 rounded-xl text-sm font-semibold cursor-pointer transition-all"
+          style={{
+            background: 'linear-gradient(135deg, var(--accent) 0%, var(--accent-2-solid) 100%)',
+            color: '#fff',
+            boxShadow: '0 4px 16px rgba(59,130,246,.35)',
+          }}
           onClick={submit}
         >
           Nhúng {files.length} tệp vào đồ thị

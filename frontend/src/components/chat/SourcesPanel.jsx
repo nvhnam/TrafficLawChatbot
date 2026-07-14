@@ -1,9 +1,18 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { ChevronDown, ChevronUp } from '../icons'
+
+function dedupe(sources) {
+  const seen = new Map()
+  for (const [key, src] of Object.entries(sources || {})) {
+    const dedupeKey = (src?.label ?? '').trim() || `${key}|${src?.text ?? ''}`
+    if (!seen.has(dedupeKey)) seen.set(dedupeKey, [key, src])
+  }
+  return [...seen.values()]
+}
 
 export default function SourcesPanel({ sources }) {
   const [open, setOpen] = useState(false)
-  const entries = Object.entries(sources || {})
+  const entries = useMemo(() => dedupe(sources), [sources])
   if (entries.length === 0) return null
 
   return (

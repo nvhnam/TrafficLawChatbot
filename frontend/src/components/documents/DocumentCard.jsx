@@ -20,13 +20,10 @@ export default function DocumentCard({ doc, onDeleted }) {
   }
 
   return (
-    <div
-      className="flex items-center gap-3 px-4 py-3 rounded-xl transition-colors"
-      style={{ background: 'var(--surface2)', border: '1px solid var(--border)' }}
-    >
+    <div className="surface-card flex items-center gap-3 px-4 py-3">
       <div
         className="p-2 rounded-lg shrink-0"
-        style={{ background: 'var(--surface)', color: 'var(--muted)' }}
+        style={{ background: 'var(--accent-dim)', color: 'var(--accent-hi)' }}
       >
         <FileText size={16} />
       </div>
@@ -38,15 +35,15 @@ export default function DocumentCard({ doc, onDeleted }) {
         <div className="text-xs mt-0.5" style={{ color: 'var(--muted)' }}>
           {doc.chunk_count ?? '?'} đoạn
         </div>
-        {error && <div className="text-xs mt-0.5 text-red-400">{error}</div>}
+        {error && <div className="text-xs mt-0.5" style={{ color: 'var(--danger)' }}>{error}</div>}
       </div>
 
       <button
-        className="p-1.5 rounded-lg transition-colors cursor-pointer shrink-0"
-        style={{ color: deleting ? 'var(--muted)' : 'var(--muted)' }}
+        className="icon-btn shrink-0"
         onClick={handleDelete}
         disabled={deleting}
         title="Xóa văn bản"
+        aria-label="Xóa văn bản"
       >
         <Trash2 size={14} />
       </button>
